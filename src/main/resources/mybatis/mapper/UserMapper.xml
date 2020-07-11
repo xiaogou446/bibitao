@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.df.bbt.mapper.UserMapper">
+    <!--    //根据传入的User，查找相应的name
+    public Map<String, String> getName(User user);-->
+    <select id="getName" resultType="String">
+        SELECT user_name FROM USER
+        <where>
+            <if test="userAccount != null">
+                user_account=#{userAccount} and
+            </if>
+            <if test="userPassword != null">
+                user_password=#{userPassword}
+            </if>
+            <if test="userAccount == null">
+                user_account="foiewnmfoiwf" and
+            </if>
+            <if test="userPassword == null">
+                user_password="fewgwggwefef"
+            </if>
+        </where>
+        limit 1
+    </select>
+
+    <!--    //根据传入的account 查找是否存在
+    public int judgeAccount(String account);-->
+    <select id="judgeAccount" resultType="int">
+        SELECT count(*) FROM USER
+        <where>
+            user_account=#{account}
+        </where>
+    </select>
+
+    <!--    //进行注册功能
+    public int registUser(User user);-->
+    <insert id="registUser" parameterType="com.df.bbt.entity.User">
+        INSERT INTO USER(user_account,user_name,user_password,E_mail,phone_number)
+        values(#{userAccount}, #{userName}, #{userPassword}, #{eMail}, #{phoneNumber})
+    </insert>
+
+    <!--    //根据用户id找到
+    public User getUserById(Integer userId);-->
+    <select id="getUserById" resultType="com.df.bbt.entity.User">
+        SELECT * FROM USER
+        WHERE user_id=#{userId}
+    </select>
+
+    <!--    //修改User的值
+    public int updateUser(User user);-->
+    <update id="updateUser" parameterType="com.df.bbt.entity.User">
+        UPDATE USER
+        <trim prefix="set" suffixOverrides=",">
+            <if test="userName!=null">
+                user_name=#{userName},
+            </if>
+            <if test="gender!=null">
+                gender=#{gender},
+            </if>
+            <if test="maritalStatus!=null">
+                marital_status=#{maritalStatus},
+            </if>
+            <if test="phoneNumber!=null">
+                phone_number=#{phoneNumber}
+            </if>
+        </trim>
+    </update>
+
+</mapper>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.df.bbt.mapper.CollectMapper">
+
+    <!--    //判断当前用户以及商品的收藏状态
+    public int judgeCollectStatus(int userId, int goodsId);-->
+    <select id="judgeCollectStatus" resultType="int">
+        SELECT COUNT(*)
+        FROM collect
+        <where>
+        user_id=#{userId} and GOODS_ID=#{goodsId}
+        </where>
+    </select>
+
+    <!--//增加收藏
+    public int insertCollect(Collect collect);-->
+    <insert id="insertCollect" parameterType="com.df.bbt.entity.Collect">
+        INSERT INTO collect(user_id, GOODS_ID, collect_price, collect_time)
+        VALUES(#{userId}, #{goodsId}, #{collectPrice}, #{collectTime})
+    </insert>
+
+    <!--//删除收藏
+    public int deleteCollect(Collect collect);-->
+    <delete id="deleteCollect" parameterType="com.df.bbt.entity.Collect">
+        DELETE FROM collect
+        <where>
+            user_id=#{userId} AND GOODS_ID=#{goodsId}
+        </where>
+    </delete>
+
+    <!--    //根据用户id 和 页数获取收藏的信息
+    public List<Map<String, Object>> getCollectPassUserIdOrPage(Integer userId, Integer begin, Integer num);-->
+    <select id="getCollectPassUserIdOrPage" resultType="map">
+        SELECT collect_time,collect_price,GOODS_TITLE,SEARCH_IMG,GOODS_PRICE,shop,source,collect.GOODS_ID
+        FROM collect inner join goods_detail on collect.GOODS_ID = goods_detail.GOODS_ID
+        WHERE user_id=#{userId}
+        LIMIT #{begin},#{num}
+    </select>
+
+    <!--    //根据用户id获取其收藏数
+    public int getCollectTotalNum(Integer userId);-->
+    <select id="getCollectTotalNum" resultType="int">
+        SELECT count(*) FROM collect
+        WHERE user_id=#{userId}
+    </select>
+
+</mapper>
+

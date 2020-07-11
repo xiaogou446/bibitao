@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.df.bbt.mapper.PriceMapper">
+    <!--    //根据商品id查找相应的历史时间和历史价格
+    public List<String> getHisTime(int id);
+    public List<String> getHisPrice(int id);-->
+    <select id="getHisTime" resultType="java.lang.String">
+        SELECT TIMES FROM goods_his
+        WHERE GOODS_ID=#{id}
+    </select>
+
+    <select id="getHisPrice" resultType="java.lang.String">
+        SELECT PRICE FROM goods_his
+        WHERE GOODS_ID=#{id}
+    </select>
+
+    <!--    //根据商品id查找相应的预测时间和预测价格
+    public List<String> getPreTime(int id);
+    public List<String> getPrePrice(int id);-->
+    <select id="getPreTime" resultType="java.lang.String">
+        SELECT time FROM prediction
+        WHERE GOODS_ID=#{id}
+    </select>
+    <select id="getPrePrice" resultType="java.lang.String">
+        SELECT price FROM prediction
+        WHERE GOODS_ID=#{id}
+    </select>
+
+    <!--    //根据商品id获取该商品的标题和url
+    public GoodsDetail getGoodsTitle(int id);-->
+    <select id="getGoodsTitle" resultType="com.df.bbt.entity.GoodsDetail">
+        SELECT GOODS_URL,GOODS_TITLE FROM goods_detail
+        <where>
+            <if test="id &gt; 11000 and id &lt; 100000">
+                GOODS_ID=#{id}
+            </if>
+            <if test="id &lt;= 11000 and id &gt;= 100000">
+                GOODS_ID=11002
+            </if>
+        </where>
+    </select>
+
+    <!--    //根据用户账号寻找id
+    public int getUserIdPassAcc(String account);-->
+    <select id="getUserIdPassAcc" resultType="int">
+        SELECT user_id FROM USER
+        <where>
+            <if test="account != null">
+                user_account=#{account}
+            </if>
+            <if test="account == null">
+                user_account=woshiguanliyuan
+            </if>
+        </where>
+    </select>
+
+
+</mapper>

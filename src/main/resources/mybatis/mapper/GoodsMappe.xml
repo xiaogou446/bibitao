@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.df.bbt.mapper.GoodsMapper">
+    <!--    //根据keyword找近似的词
+    public List<String> getSimilar(String keyword);-->
+    <select id="getSimilar" resultType="java.lang.String">
+        SELECT * FROM search
+        WHERE search_name LIKE CONCAT(#{keyword},'%')
+        ORDER BY search_count DESC
+        LIMIT 5
+    </select>
+
+    <!--//将搜索的值传入到数据库
+    public int insertKeyword(String keyword);-->
+    <insert id="insertKeyword" parameterType="java.lang.String">
+        INSERT IGNORE INTO search VALUES(#{keyword},0)
+    </insert>
+
+    <!--//将搜索的值热度+1
+    public int updateKeyword(String keyword);-->
+    <update id="updateKeyword" parameterType="java.lang.String">
+        UPDATE search SET search_count=search_count+1
+        where search_name=#{keyword}
+    </update>
+
+    <!--    //通过关键词获取到对应的对象列表
+    public List<GoodsDetail> getGoodsList(String content, int begin, int num);-->
+    <select id="getGoodsList" resultType="com.df.bbt.entity.GoodsDetail">
+        SELECT GOODS_ID,SEARCH_IMG,shop,GOODS_TITLE,GOODS_EVA,GOODS_PRICE,source,GOODS_DEGREE
+        FROM goods_detail
+        <trim prefix="WHERE" prefixOverrides="AND">
+            <if test="content!=null">
+                GOODS_TITLE LIKE #{content}
+            </if>
+        </trim>
+        LIMIT #{begin},#{num}
+    </select>
+
+    <!--    //获取当前搜索词的所有页数
+    public int getTotalPage(String content);-->
+    <select id="getTotalPage" resultType="int">
+        SELECT COUNT(*)
+        FROM goods_detail
+        <where>
+            <if test="content!=null">
+                GOODS_TITLE LIKE #{content}
+            </if>
+        </where>
+    </select>
+
+    <!--    //根据商品id列表获取其数据
+    public List<GoodsDetail> getCompare(List<Integer> goodsIdList);-->
+    <select id="getCompare" resultType="com.df.bbt.entity.GoodsDetail">
+        SELECT * FROM goods_detail
+        WHERE GOODS_ID in
+        <foreach collection="list" item="goodsId" open="(" close=")" separator=",">
+            #{goodsId}
+        </foreach>
+    </select>
+
+    <!--    /**
+     * 根据商品的总类标签和分类标签获取数据
+     * @param gbId 种类 如1 手机类 2电脑类 3平板 4 耳机
+     * @param gmId 具体种类 如11 华为手机 21 华为电脑
+     * @param num 需要返回的个数
+     * @return
+     */
+    public List<GoodsDetail> getRecommendGoods(int gbId, int gmId, int num);-->
+
+    <resultMap id="recommendMap" type="com.df.bbt.entity.GoodsDetail" >
+        <id property="goodsId" column="GOODS_ID"></id>
+        <result property="shop" column="shop"></result>
+        <result property="brand" column="brand"></result>
+        <result property="model" column="model"></result>
+        <result property="goodsTitle" column="GOODS_TITLE"></result>
+        <result property="searchImg" column="SEARCH_IMG"></result>
+        <result property="goodsPrice" column="PRICE"></result>
+    </resultMap>
+
+    <sql id="innerSelect">
+        SELECT DISTINCT  goods_his.`GOODS_ID`, AVG(PRICE) AS avg_price, shop, brand, model, GOODS_TITLE, SEARCH_IMG
+        FROM goods_his INNER JOIN goods_detail ON goods_his.`GOODS_ID` = goods_detail.`GOODS_ID`  INNER JOIN goods_Mkind ON goods_detail.`gm_id` = goods_Mkind.`gm_id` INNER JOIN goods_Bkind ON goods_Mkind.`gb_id` = goods_Bkind.`gb_id`
+        <where>
+            goods_his.`TIMES` >= DATE_SUB('2020-02-10', INTERVAL 1 DAY) AND goods_Bkind.`gb_id`= #{gbId} AND goods_Mkind.`gm_id`= #{gmId}
+        </where>
+        GROUP BY goods_his.`GOODS_ID`
+    </sql>
+
+    <select id="getRecommendGoods" resultMap="recommendMap">
+        SELECT *
+        FROM (<include refid="innerSelect" />) AS temp inner join goods_his ON temp.GOODS_ID = goods_his.`GOODS_ID`
+        <where>
+            goods_his.`TIMES`='2020-02-10' AND goods_his.`PRICE` &lt; temp.avg_price
+        </where>
+        LIMIT #{num}
+    </select>
+
+
+
+</mapper>

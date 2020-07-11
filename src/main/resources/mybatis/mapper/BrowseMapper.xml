@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.df.bbt.mapper.BrowseMapper">
+    <!--    //插入浏览记录
+public int insertBrowseRecord(Browse browse);-->
+    <insert id="insertBrowseRecord" parameterType="com.df.bbt.entity.Browse">
+        INSERT IGNORE INTO browse(browse_time, user_id, GOODS_ID, browse_price)
+        VALUES(#{browseTime}, #{userId}, #{goodsId}, #{browsePrice})
+    </insert>
+
+    <!--    //修改插入浏览记录的时间
+    public int UpdateBrowseTime(Browse browse);-->
+    <update id="UpdateBrowseTime" parameterType="com.df.bbt.entity.Browse">
+        UPDATE browse
+        SET browse_time=#{browseTime}, browse_price=#{browsePrice}
+        WHERE user_id=#{userId} AND GOODS_ID=#{goodsId}
+    </update>
+
+    <!--    //根据用户id 和 页数获取浏览的信息
+    public List<Map<String, Object>> getBrowsePassUserIdOrPage(Integer userId, Integer begin, Integer num);-->
+    <select id="getBrowsePassUserIdOrPage" resultType="map">
+        SELECT browse_time,browse_price,GOODS_TITLE,SEARCH_IMG,GOODS_PRICE,shop,source,browse.GOODS_ID
+        FROM browse inner join goods_detail on browse.GOODS_ID = goods_detail.GOODS_ID
+        WHERE user_id=#{userId}
+        LIMIT #{begin},#{num}
+    </select>
+
+    <!--    //根据用户id获取其浏览数
+    public int getBrowseTotalNum(Integer userId);-->
+    <select id="getBrowseTotalNum" resultType="int">
+        SELECT count(*) FROM browse
+        WHERE user_id=#{userId}
+    </select>
+
+    <!--    //删除浏览记录
+    public int deleteBrowse(Browse browse);-->
+    <delete id="deleteBrowse" parameterType="com.df.bbt.entity.Browse">
+        DELETE FROM browse
+        <where>
+            user_id=#{userId} AND GOODS_ID=#{goodsId}
+        </where>
+    </delete>
+
+</mapper>
