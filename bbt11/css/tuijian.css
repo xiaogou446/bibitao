@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局样式*/
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-color:#FFFFFF;	
+	overflow-x: hidden;
+}
+a{
+	text-decoration: none;
+	/* color: white; */
+}
+a:hover{
+	text-decoration: none;
+}
+#wrapper{
+	margin: 0 auto;
+}
+.good a{
+ color: white;
+}
+/*顶部总样式*/
+#header{
+	width: 1920px;
+	position: fixed;
+	left: 50%;
+	margin-left: -960px;
+	font-size: 18px;
+}
+/*显示百度的框*/
+#header form{
+	color:black;
+	margin-left: -10px;
+}
+/*搜索框样式*/
+.search_box{
+	height: 32px;
+	margin-top: 3px;
+	margin-left: -4px;
+}
+/*解决输入时光标位置问题*/
+input::-webkit-input-placeholder {
+    /* placeholder位置  */
+    text-align: left;
+}
+/*顶部标签样式*/
+#header span{
+	margin-right: 15px;
+	color: darkgrey;
+	width: 10px;
+	height: 10px;
+	font-size: 18px;
+}
+#header ul{
+	margin-left: -18px;
+}
+#header .icon{
+	width: 3px;
+	padding:0;
+}
+#header .person_all{
+	margin-left: -10px;
+}
+#header .tuijian_icon{
+	margin-left: -5px;
+}
+#header .tuijian_span{
+	margin-left: 5px;
+}
+.nav>li>a{
+	padding: 15px 8px 15px 15px;
+}
+/*轮播系列总体样式*/
+.computers{
+	width: 1920px;
+	height: 600px;
+	border-radius: 100px 0 100px 0;
+	background-size: cover;
+	color: white;
+	position: relative;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	font-family: "微软雅黑";
+}
+.swiper-container{
+    width: 1920px;
+	position: relative;
+	left: 50%;
+	margin-left: -960px;
+	margin-top: 100px;
+}
+.swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+ }
+.swiper-slide img{
+	width: 500px;
+	height: 500px;
+	box-shadow:grey 1px 3px 10px 0px;
+	margin-left: -20px;
+}
+.good{
+	position:relative;
+	width: 1920px;
+	margin: 0 auto;
+	padding-left: 180px;
+	cursor: default;
+}
+.good img{
+	width: 300px;
+	height: 300px;
+}
+.good .container{
+	padding: 0;
+	margin: 0;
+}
+.mg{
+	margin-right: -2600px;
+}
+/*底部总体样式*/
+#footer{
+	width: 1920px;
+	background-color:black;
+	margin: 0 auto;
+	font-family: "微软雅黑";
+	height: 400px;
+	position: relative;
+	top:30px;
+	cursor: default;
+}
+/*表格每一块总体样式*/
+#footer tr{
+	line-height: 45px;
+}
+/*“行”样式*/
+#footer th{
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+/*“列”样式*/
+#footer td{
+	color:darkgray;
+	font-size: 20px;
+	text-align: center;
+}
+/*“列”超链接样式*/
+#footer td a{
+	color: darkgray;
+}
+/*“列”超链接 鼠标悬停样式*/
+#footer td a:hover{
+	color: #337ab7;
+}
+/*表格总体样式*/
+#footer table{
+	width: 1920px;
+	left: 50%;
+	margin-left: -960px;
+	position: relative;
+	top:20%;
+}
+/*置顶样式*/
+#footer .zhiding{
+	width: 50px;
+	height: 50px;
+	border-radius:0 0 50px 0;
+	background-color: black;
+	border: 0;
+	position: fixed;
+	top:865px;
+	left: 97%;
+}

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>index</title>
+    <!--进入按钮CS-->
+<meta name="description" content="Some ideas for modern button styles and effects">
+<meta name="keywords" content="button, effect, hover, style, inspiration, web design">
+<meta name="author" content="Codrops">
+<link rel="shortcut icon" href="img/icon.png">
+<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+<link rel="stylesheet" type="text/css" href="./css/vicons-font.css">
+<link rel="stylesheet" type="text/css" href="./css/buttons.css">
+<script id="_carbonads_projs" type="text/javascript" src="./css/C6AILKT.json"></script>
+    <link rel="stylesheet" href="css/denglu.css"/>
+    <link rel="stylesheet" href="css/shouye.css">
+    <link rel="stylesheet" href="css/zhuce.css"/>
+    <!--动图cs-->
+	<link rel="stylesheet" href="css/style_all.css">
+<!--搜索框cs-->
+	<link rel="stylesheet" href="css/autocomplete.css">
+<!--其他cs-->
+	<link rel="stylesheet" href="css/collect.css">
+<!--    <script type="text/javascript" src="../css/shouye.js"></script>-->
+    <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+    <!--<script src="css/shouye.js" type="text/javascript"></script>-->
+    <script src="js/bootstrap.js" type="text/javascript"></script>
+    <!--导航js-->
+	<!-- <script type="text/javascript" src="js/jquery.js"></script> -->
+	<script type="text/javascript" src="js/autocomplete.js"></script>
+    <!--动图js-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!--百度js-->
+    <script type="text/javascript">
+        //var proposals = ['百度1', '百度2', '百度3', '百度4', '百度5', '百度6', '百度7','呵呵呵呵呵呵呵','百度','新浪','a1','a2','a3','a4','b1','b2','b3','b4'];
+        $(document).ready(function(){
+            $('#search-form').autocomplete({
+                //hints: proposals,
+                width: 180,
+                height: 30,
+/*                 onSubmit: function(text){
+                    $('#message').html('Selected: <b>' + text + '</b>');
+                } */
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <!--	导航-->
+	<div id="header" class="navbar-fixed-top center-block">
+		<nav class="navbar navbar-default navbar-inverse">
+<!--		品牌名-->
+			<a class="navbar-brand" href="index.html">bbt</a>
+<!--			其他标签-->
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<!--				主页-->
+					<ul class="nav navbar-nav">
+						<li  class="active"><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>主页<span class="sr-only">(current)</span></a></li>
+					</ul>
+<!--				个人中心-->
+					<ul id="toPersonal" class="nav navbar-nav person_all">
+					    <li>
+                            <a href="personal.html">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true">
+                                </span>
+                                <span class="person_icon">个人中心</span><span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+					</ul>
+<!--			    好物推荐-->
+                    <div class="navbar-header">
+                        <ul id="toTuijian" class="nav navbar-nav tuijian_all">
+                            <li>
+                                <a class="navbar-brand" href="tuijian.html">
+                                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true">
+                                    </span>
+                                    <span class="tuijian_span">好物推荐</span><span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+<!--			    搜索-->
+                    <form id="transient" class="navbar-form navbar-left col-lg-2">
+    <!--				搜索框-->
+                        <div class="form-group search_box"  id="search-form">
+                        </div>
+    <!--					搜索框-->
+                    </form>
+<!--				登录注册-->
+<!--                     <ul class="nav navbar-nav navbar-right wsh ">
+                        <li class="dropdown">
+                            <a href=" " class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-tag" aria-hidden="true"></span>
+                                登录/注册
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a id="toLogin" href="#">登陆</a>
+                                </li>
+                                <li role="separator" class="divider">
+
+                                </li>
+                                <li>
+                                    <a id="toRegist" href="#">注册</a>
+                                </li>
+                                <li>< a href="#">注销</ a></li>
+                            </ul>
+                        </li>
+                    </ul> -->
+				</div>
+			</div>
+		</nav>
+	</div>
+    <div class="decoration center-block">
+        <!--	动图-->
+		<div id="particles-js" class="center-block"></div>
+    </div>
+    <div class="aa">
+        <!--主体部分外层div-->
+        <div class="ab" id="firab">
+            <!--第一个展示的块（图片及黑色背景）-->
+            <div class="ac">
+                <!--图片位置控制-->
+                <img src="img/shouye1.jpg" alt="">
+                <!--图片导入及大小控制-->
+            </div>
+            <div class="ad">
+                <!--主要标题位置控制-->
+                <span><b>手 机</b></span>
+                <!--黑色字-->
+                <span class="adb"><b>专 场 区</b></span>
+                <!--白色字-->
+            </div>
+            <div class="ae">
+                <!--进入按钮位置样式控制-->
+               <div class="box bg-1">
+                	<button id="indexPhone" class="button button--winona button--border-thin button--round-s" data-text="enter"><span><a class="aea" href="#"><b>进入</b></a></span></button>
+                <!--进入超链接-->
+                </div>
+                <!--进入超链接-->
+            </div>
+            <div class="af">
+                <!--右部白色小字位置样式控制-->
+                <div class="afa">
+                    <!--第一列字位置控制-->
+                    <span>带走属于你的</span>
+                    <!--第一列字-->
+                </div>
+                <div class="afb">
+                    <!--第二列字位置控制-->
+                    <span>掌上明珠</span>
+                    <!--第二列字-->
+                </div>
+            </div>
+        </div>
+        <div class="bb">
+            <!--第二个所展示的块-->
+            <div class="bc">
+                <!--图片位置控制-->
+                <img src="img/shouye2.jpg" alt="">
+                <!--图片导入及大小控制-->
+            </div>
+            <div class="bd">
+                <!--主要标题位置控制-->
+                <span class="bda"><b>电 脑</b></span>
+                <!--白色字-->
+                <span ><b>专 场 区</b></span>
+                <!--黑色字-->
+            </div>
+            <div class="be">
+                <!--进入按钮位置样式控制-->
+                <div class="box bg-1">
+                	<button id="indexComputer" class="button button--winona button--border-thin button--round-s" data-text="enter"><span><a class="bea" href="javascript:0"><b>进入</b></a></span></button>
+                <!--进入超链接-->
+                </div>
+                <!--进入超链接-->
+            </div>
+            <div class="bf">
+                <!--左部白色小字位置样式控制-->
+                <div class="bfa">
+                    <!--第一列字位置控制-->
+                    <span>享受属于你的</span>
+                    <!--第一列字-->
+                </div>
+                <div class="bfb">
+                    <!--第二列字位置控制-->
+                    <span>移动商务</span>
+                    <!--第二列字-->
+                </div>
+            </div>
+        </div>
+        <div class="ab">
+            <!--第三个所展示的块-->
+            <div class="ac">
+                <!--图片位置控制-->
+                <img src="img/shouye3.jpg" alt="">
+                <!--图片导入及大小控制-->
+            </div>
+            <div class="ad">
+                <!--主要标题位置控制-->
+                <span><b>平 板</b></span>
+                <!--黑色字-->
+                <span class="adb"><b>专 场 区</b></span>
+                <!--白色字-->
+            </div>
+            <div class="ae">
+                <!--进入按钮位置样式控制-->
+                <div class="box bg-1">
+                	<button id="indexPad" class="button button--winona button--border-thin button--round-s" data-text="enter"><span> <a class="aea" href="javascript:0"><b>进入</b></a></span></button>
+                <!--进入超链接-->
+                </div>
+                <!--进入超链接-->
+            </div>
+            <div class="af">
+                <!--右部白色小字位置样式控制-->
+                <div class="afa">
+                    <!--第一列字位置控制-->
+                    <span>乐享属于你的</span>
+                    <!--第一列字-->
+                </div>
+                <div class="afb">
+                    <!--第二列字位置控制-->
+                    <span>轻松办公</span>
+                    <!--第二列字-->
+                </div>
+            </div>
+        </div>
+        <div class="bb">
+            <!--第四个所展示的块-->
+            <div class="bc">
+                <!--图片位置控制-->
+                <img src="img/shouye4.jpg" alt="">
+                <!--图片导入及大小控制-->
+            </div>
+            <div class="bd">
+                <!--主要标题位置控制-->
+                <span class="bda"><b>耳 机</b></span>
+                <!--白色字-->
+                <span><b>专 场 区</b></span>
+                <!--黑色字-->
+            </div>
+            <div class="be">
+                <!--进入按钮位置样式控制-->
+               <div class="box bg-1">
+                	<button id="indexEarphone" class="button button--winona button--border-thin button--round-s" data-text="enter"><span><a class="bea" href="javascript:0"><b>进入</b></a></span></button>
+                <!--进入超链接-->
+                </div>
+                <!--进入超链接-->
+            </div>
+            <div class="bf">
+                <!--左部白色小字位置样式控制-->
+                <div class="bfa">
+                    <!--第一列字位置控制-->
+                    <span>乐动属于你的</span>
+                    <!--第一列字-->
+                </div>
+                <div class="bfb">
+                    <!--第二列字位置控制-->
+                    <span>动感地带</span>
+                    <!--第二列字-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="row">
+	<table>
+		<tr class="cur">
+			<th class="col-md-2">比价指南</th>
+			<th class="col-md-2">合作伙伴</th>
+			<th class="col-md-2">关于我们</th>
+		</tr>
+		<tr>
+			<td><a href="">常见问题</a></td>
+			<td><a href="">京东</a></td>
+			<td><a href="">©2019比比淘版权所有</a></td>
+		</tr>
+		<tr>
+			<td><a href="">联系客服</a></td>
+			<td><a href="">天猫</a></td>
+			<td><a href="">友情链接</a></td>
+		</tr>
+		<tr>
+			<td><a href="">比价流程</a></td>
+			<td><a href="">淘宝</a></td>
+			<td><a href="">浙ICP备10201940号</a></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>唯品会</td>
+			<td>浙公网安备33030802010083</td>
+		</tr>
+	</table>
+
+	</div>
+</div>
+<!--动图js-->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/stats.js"></script>
+<script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function() {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+</script>
+<!--进入按钮js-->
+<script>
+
+			(function() {
+
+				var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+
+				if(isSafari) {
+
+					document.getElementById('support-note').style.display = 'block';
+
+				}
+
+			})();
+
+</script>
+</body>
+</html>
+<script type="text/javascript">
+
+function getUrl(){
+	var deffered = new $.Deferred();
+	$.getJSON("res/serverconfig.json",(responseText)=>{
+		$url = responseText.protocol + responseText.domain+ ":" + responseText.port + responseText.context;
+		//执行显示是否拿到数据
+		//console.log($url);
+		
+		deffered.resolve($url);
+	});
+	var result = new $.Deferred();
+ 	deffered.then(function( serverconfig ) {
+		$.getJSON("res/jumpconfig.json",(responseText)=>{
+			$urls = responseText.protocol + responseText.domain;
+			var getDict=[];
+			getDict["serverconfig"]=serverconfig;
+			getDict["jumpconfig"]=$urls;
+			//执行显示是否拿到数据
+			//console.log(getDict);
+			result.resolve(getDict);
+		});		
+		
+	}) 
+	return result;
+}
+
+
+	$(function(){
+		
+		var def = getUrl();
+		def.then(function(getDict){
+			//console.log($url);
+			//关于登录注册 直接加上 就可以  删掉一个js
+			//刷新页面 判定用户是否登录
+			/* token无内容 说明还没有登录 判定用户是否登录 */
+			if(localStorage.length == 0){
+				$("#transient").after('<!--				登录注册--><ul class="nav navbar-nav navbar-right wsh "><li class="dropdown"><a href=" " class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>登录/注册<span class="caret"></span></a><ul class="dropdown-menu"><li><a id="toLogin" href="#">登录</a></li><li role="separator" class="divider"></li><li><a id="toRegist" href="#">注册</a></li><!-- <li>< a href="#">注销</ a></li> --></ul></li></ul>')
+			}else{
+				var tokens=localStorage.getItem("token");
+				let $data={token:tokens};
+				let data = JSON.stringify($data)
+				
+				$.ajax({
+					type:"post",
+					data:data,
+					url:getDict.serverconfig+"/judgeLoginStatus.action",
+                    headers:{"Content-Type":"application/json;charset=UTF-8"},
+					dataType:"json",
+					success:function(responseText){
+						if(responseText.status === "200"){   //"<p>欢迎您,"+responseText.userName+"		<a id='out' href='#'>注销</a></p>"
+							$("#transient").after('<!--				登录注册--><ul class="nav navbar-nav navbar-right wsh "><li class="dropdown"><a href=" " class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>欢迎您:'+responseText.userName+'<span class="caret"></span></a><ul class="dropdown-menu"><li><a id="out" href="#">注销</a></li><!-- <li>< a href="#">注销</ a></li> --></ul></li></ul>')
+						}else{
+							//登录过期
+							$("#transient").after('<!--				登录注册--><ul class="nav navbar-nav navbar-right wsh "><li class="dropdown"><a href=" " class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>登录过期啦!请重新登录<span class="caret"></span></a><ul class="dropdown-menu"><li><a id="toLogin" href="#">登录</a></li><li role="separator" class="divider"></li><li><a id="toRegist" href="#">注册</a></li><!-- <li>< a href="#">注销</ a></li> --></ul></li></ul>')
+						}	
+					},
+					error:function(){
+						location.href=getDict.jumpconfig+"/404.html"
+					}	
+				});
+			}
+			
+			//注销
+				$("body").on("click","#out",function(){
+					localStorage.removeItem("token");
+					location.reload();
+				});
+			
+			
+		
+			//弹出登录
+			$("body").on("click","#toLogin,#create-btn2",function(){
+				
+				$("body").append('<div class="sign-in" id="js1"><div id="main-content" class="card"> <header><span class="close" id="close1"></span><span id="bbt-signin-header">账户</span></header> <section><div class="condition2">*为必填项目</div><form action=""><div class="input-row"><h1 class="accounttext">账号*</h1><input id="account" class="account" type="text" placeholder=""/></div><div class="password-row"><div class="display"><a href="javascript:void(0)">显示</a></div><h1 class="passwordtext">密码*</h1><input id="password" class="password" type="password" placeholder=""/><div class="forgetnumber"><a href="javascript:void(0)">忘记密码？</a></div></div><div class="button-row"><button id="submit-btn" type="submit">登录</button> </div><div class="tos-pp">继续操作则表示您同意我们的<a id="bbt-tos" href="javascript:void(0)">服务条款</a>和<a id="bbt-pp" href="javascript:void(0)">隐私声明</a></div></form><hr/><div class="button-row"><button id="create-btn" type="submit">创建账户</button></div></section><div class="prompt"><p>通过您的账户，将可以：</p><p>● 查看预期价格</p><p>● 查看您的所有收藏记录和浏览记录</p><p>● 管理您的地址簿，以方便日后订购</p><p>● 更新您的个人资料</p></div></div></div>')
+			
+			
+			//显示密码
+			$(".display").click(function(){
+				let pass_type = $('.password').attr('type');
+				if (pass_type === 'password' ){
+			          $('.password').attr('type','text');
+			          $('.display').html('<a href="javascript:void(0)">隐藏</a>')
+			       } else {
+			           $('.password').attr('type', 'password');
+			           $('.display').html('<a href="javascript:void(0)">显示</a>')
+			       }
+			})
+			//判定账号密码是否为空
+			//if($("#account").val() !="" && $("#password").val() != ""){
+				$("#submit-btn").click(()=>{
+					//先令判定框为空
+					$("#judge_loginbtn").html("");
+					$("#judge_loginbtn").remove();
+					let $data = {
+							account: $.trim($("#account").val()),  //trim 去除两端空白符号
+							password: $.trim($("#password").val())
+							};
+					//window.console.log($data);
+					//把对象变成字符串 以对应ContentType的json字符串传过去
+					let person = JSON.stringify($data);
+					$.ajax({
+						type:"post",
+						url:getDict.serverconfig +"/login.action",
+						data:person,
+                        headers:{"Content-Type":"application/json;charset=UTF-8"},
+						dataType:"json",
+						async:false,
+						//contentType:  这里显示的是表单type传值  一般用json 字符串传值 这样就需要修改contentType
+						success: function(responseText){
+							//window.console.log(responseText)
+							//当账号和密码一致时
+							if(responseText.status ==="200"){
+								if(!window.localStorage){
+									alert("浏览器不支持localStorage");
+								}else{
+									//var storage=window.localStorage; 
+									//console.log(responseText.token);
+									//localStorage.clear();
+									/* 存入token  */
+									localStorage.setItem("token", responseText.token);
+									/* storage["token"]=responseText.token; */
+									//$(".forgetnumber").prepend("<span id='judge_loginbtn' style='color:green'>恭喜，登陆成功</span>")
+									//console.log(localStorage);
+									var returnUrl = localStorage.returnUrl;
+									//console.log(returnUrl)
+									localStorage.removeItem("returnUrl");
+									//if(returnUrl === undefined){
+									//返回当前页面
+									location.reload();
+									//}else{
+									//	location.href='http://bbt.com/goodsDetail.html'+returnUrl;  
+									//}
+									
+									//location.href='http://bbt.com/goodsDetail.html'+returnUrl;  
+								
+			/* 			            storage.clear();
+						            console.log(storage); */
+								}
+							}else{
+								$(".forgetnumber").prepend('<span id="judge_loginbtn" style="margin-right:160px;color:red;" >账号或密码错误</span>')
+							}	
+						},
+						error:function(){
+						    alert("服务器走丢了")
+							//location.href=getDict.jumpconfig+"/404.html"
+						}
+					});
+					
+				});
+		})
+			// 关闭登录页面
+			$("body").on("click","#close1",function(){
+					$(this).parents("#js1").remove();
+			})
+			//关闭注册页面
+			$("body").on("click","#close2",function(){
+					$(this).parents("#js2").remove();
+			})
+			
+			
+			//弹出注册
+			$("body").on("click","#toRegist,#create-btn",function(){
+				$("#js1").remove()
+				$("body").append('<div class="sign-in" id="js2"><div id="main-content2" class="card"><header><span class="close" id="close2"></span><span id="bbt-signin-header2">账户</span></header><section><div class="condition">*必填项目</div><div class="build">创建账户</div><form action=""><div class="name-row"><h1  class="nametext">用户名* </h1><input id="name" class="name" type="text" placeholder=""/></div><div class="input-row"><h1 class="accounttext">账号* </h1><input id="account" class="account" type="text" placeholder=""/></div><div class="password-row"><div class="display"><a href="javascript:void(0)">显示</a></div><h1 id="judgePassword1" class="passwordtext">密码* </h1><input id="password1" class="password" type="password" placeholder=""/></div><div class="password-row"><h1 id="judgePassword2" class="passwordtext">确定密码* </h1><input id="password2" class="password" type="password" placeholder=""/></div><div class="mail-row"><h1 class="mailtext">E-mail* </h1><input id="Email" class="mail" type="text" placeholder=""></div><div class="phone-row"><h1 class="phonetext">手机号码* </h1><input id="tel" class="phone" type="text" placeholder=""></div><div class="ag-po">创建账户，您即同意接受我们的条款《<a id="bbt-ag" href="">比比淘用户注册协议</a>》，并同意您的个人信息遵照《<a id="bbt-po" href="">比比淘隐私政策</a>》</div></form><div class="button-row"><button id="create-btn2" type="submit">创建账户</button></div><hr/></section></div></div>')
+				
+				//正式注册样式
+				var $name = false;
+				var $account = false;
+				var $passowrd1 = false;
+				var $password2 = false;
+				var $Email = false;
+				var $tel = false;
+				
+	/* 			let $url = "";
+				//获取url的路径
+				//获取json文件中的数据				回调函数 当执行完后获取数据后
+				$.getJSON("res/serverconfig.json",(responseText)=>{
+					$url = responseText.protocol + responseText.domain+ ":" + responseText.port + responseText.context;
+					//执行显示是否拿到数据
+					window.console.log($url);
+				}); */
+				//function $judge(){
+				//	console.log(123)
+				//}
+				
+				// 判定用户账号是否存在
+				$("#account").blur(function(){
+					//当用户失去焦点时，先去除之前的内容
+					$(".tishi2").remove();
+					/* $() */
+					 let $datas={
+							 account :$.trim($("#account").val())
+					 }
+					 let data = JSON.stringify($datas);
+					 if($.trim($("#account").val()).length >=6 && $.trim($("#account").val()).length<=20 ){
+						 $.ajax({
+								type:"post",
+								data:data,
+								url: getDict.serverconfig+"/judgeAccount.action",
+								dataType:"json",
+                                headers:{"Content-Type":"application/json;charset=UTF-8"},
+								success:function(responseText){
+									if(responseText.status === 200){
+										/* console.log("此用户名可用"); */
+										$account = true;
+									}else{
+										$(".accounttext").append('<span style="color:red" class="tishi2">（此账号已被注册）</span>');
+									}
+								},
+								error:function(){
+								    alert("找不到服务器")
+									//location.href=getDict.jumpconfig+"/404.html"
+								}
+							 });
+					 }else{
+						 $(".accounttext").append('<span style="color:red" class="tishi2">（输入的长度要在6-20之间）</span>');
+					 }
+					});
+				
+				//判定密码长度
+				$("#password1").blur(function(){
+					$(".tishi3").remove();
+					if($.trim($("#password1").val()).length <6 || $.trim($("#password1").val()).length >20){
+						$("#judgePassword1").append('<span style="color:red" class="tishi3">（密码长度需在6-20之间）</span>');
+					}else{
+						$password1 = true;
+					}
+				})
+				
+				// 判定确认密码是否与密码相同
+				$("#password2").blur(function(){
+					$(".tishi4").remove()
+					if($("#password1").val() ==""){
+						$("#judgePassword2").append('<span style="color:red" class="tishi4">（密码不能为空）</span>');
+					}
+					else if($("#password1").val() === $("#password2").val()){
+						$password2 = true;
+					}else{
+						$("#judgePassword2").append('<span style="color:red" class="tishi4">（两次密码输入不一致）</span>');
+					}
+				})
+				
+				//判定邮箱格式
+				$("#Email").blur(function(){
+					$(".tishi5").remove()
+					   var reg = new RegExp("^[a-z0-9A-Z]+[- | a-z0-9A-Z . _]+@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-z]{2,}$"); 
+					   var email = $('#Email').val();
+					   if(email == ''){
+						  $(".mailtext").append('<span style="color:red" class="tishi5">（邮箱不能为空）</span>');
+					}else if(!reg.test(email)){
+						$(".mailtext").append('<span style="color:red"  class="tishi5">（邮箱的格式不正确）</span>');
+					}else{
+						$Email = true;
+					}
+					
+				})
+				//判断手机号码的格式
+				$("#tel").blur(function(){
+					$(".tishi6").remove();
+					var reg = /(1[3-9]\d{9}$)/; 
+					var tel = $.trim($("#tel").val());
+					if(!reg.test(tel)){
+						$(".phonetext").append('<span style="color:red" class="tishi6">（手机的格式不正确）</span>');
+					}else{
+						$tel = true;
+					}
+				})
+				
+			//显示密码
+			$(".display").click(function(){
+				let pass_type = $('.password').attr('type');
+				if (pass_type === 'password' ){
+			          $('.password').attr('type', 'text');
+			          $('.display').html('<a href="javascript:void(0)">隐藏</a>')
+			       } else {
+			           $('.password').attr('type', 'password');
+			           $('.display').html('<a href="javascript:void(0)">显示</a>')
+			       }
+			})
+				
+				//判断名字的长度
+				$("#name").blur(function(){
+					$(".tishi1").remove();
+					if($.trim($("#name").val()).length >1 && $.trim($("#name").val()).length <7){
+						$name = true;
+					}else{
+						$(".nametext").append('<span style="color:red" class="tishi1">（用户名长度需在1-7之间）</span>');
+					}
+				})
+				
+				//注册按钮判定
+				$("#create-btn2").click(function(){
+					$(".tishi8").remove();
+					if($name == true && $account == true && $password1 == true && $password2 == true && $Email == true && $tel == true){
+						let $datas={
+								name: $.trim($("#name").val()),
+								account: $.trim($("#account").val()),
+								password: $.trim($("#password1").val()),
+								Email: $('#Email').val(),
+								tel: $.trim($("#tel").val())
+							}
+						//console.log($datas)
+						let data = JSON.stringify($datas);
+						$.ajax({
+							type:"post",
+							data:data,
+							url:getDict.serverconfig+ "/regist.action",
+                            headers:{"Content-Type":"application/json;charset=UTF-8"},
+							dataType: "json",
+							success:function(responseText){
+								if(responseText.rows ===1){
+									$("#js2").remove();
+									//$(".button-row").after("<span id='judge_registBtn' style='color: green'>注册成功</span>");
+									//location.href='http://bbt.com/Login.html';
+								}else{
+									$(".button-row").after('<span style="color:red" class="tishi8">（注册失败啦 请重新注册）</span>');
+								}
+								
+							},
+							error:function(){
+								location.href=getDict.jumpconfig+"/404.html"
+							}
+							
+						})
+					}else{
+						$(".button-row").after('<span style="color:red" class="tishi8">（请先将信息填写完整）</span>');
+					}
+				})
+			})
+			
+			$(".autocomplete-input").keyup(function(){
+				$(".proposal-list").show();
+				if($.trim($(".autocomplete-input").val()) != ""){
+					let $data = {
+							keyword: $.trim($(".autocomplete-input").val())
+						};
+						
+						let digit = JSON.stringify($data)
+						$.ajax({
+							type:"post",
+							url:getDict.serverconfig+"/searchSimilar.action",
+							data:digit,
+                            headers:{"Content-Type":"application/json;charset=UTF-8"},
+							dataType:"json",
+							success:function(responseText){
+								/* 列表属性 */
+								
+								$(".proposal-list").text("")
+				 				for(var one in responseText){ //<li class="proposal">a1</li>  <tr><td class= 'content'>"+responseText[one]+"</td></tr>
+									$(".proposal-list").append('<li class="proposal">'+responseText[one]+'</li>')
+								} 
+								
+							},
+							error:function(){
+								location.href=getDict.jumpconfig+"/404.html"
+							}
+						})
+				}else{
+					$(".proposal-list").text("");
+				}
+			});
+			
+			// 近似值优化
+			$(".autocomplete-input").click(function(){
+				$(".proposal-list").show();
+			});
+			$(document).click(function(e){
+				var target = $(e.target);
+				if(target.attr("class")==="autocomplete-input") {return;}
+				else if(target.attr("class")==="proposal"){
+					//console.log(target.text());
+					$(".autocomplete-input").val(target.text());
+					$(".proposal-list").text("");
+					$(".proposal-list").hide();
+					}
+				else{
+					$(".proposal-list").hide();
+					/* console.log(target) */
+				}
+			});
+			//鼠标移入后变色
+	/* 		$(".proposal").mouseover(function(){
+				$(this).css("background-color","red")
+			}) */
+		
+		//回车键触发点击事件
+		$("input[name='query']").keydown(function(event){
+			if(event.keyCode==13){
+			$(".autocomplete-button").click();
+			}
+			})
+		//取消原form表单的submit功能
+		$("#transient").submit( function () {
+  			return false;
+		} );
+			
+			
+				//点击搜索触发事物 将关键词存入词库
+		$(".autocomplete-button").click(function(){
+			if($.trim($(".autocomplete-input").val()) !== ""){
+				let $datas={
+						content: $.trim($(".autocomplete-input").val())	
+					}
+					
+					data = JSON.stringify($datas);
+					$.ajax({
+						type:"post",
+						url:getDict.serverconfig+"/search.action",
+						data:data,
+                        headers:{"Content-Type":"application/json;charset=UTF-8"},
+						dataType:"json",
+						success:function(){
+							//console.log("成功插入，即将跳转");
+							location.href=getDict.jumpconfig+"/goods.html?content="+$.trim($(".autocomplete-input").val())+"&pageCurrent=1";
+						},
+						error:function(){
+							location.href=getDict.jumpconfig+"/404.html"
+						}
+					})
+			}else{
+				location.href=getDict.jumpconfig+'/index.html'; 
+			}		
+		})
+				//标题栏跳往个人中心
+		$("#toPersonal").click(function(){
+			location.href=getDict.jumpconfig+"/personal.html";
+		})
+		//标题栏跳往商品推荐
+		$("#toTuijian").click(function(){
+			location.href=getDict.jumpconfig+"/tuijian.html";
+		})
+		
+		$("#indexPhone").click(function(){
+			location.href=getDict.jumpconfig+"/goods.html?content=oppo find&pageCurrent=1"	
+		})
+		$("#indexComputer").click(function(){
+			location.href=getDict.jumpconfig+"/goods.html?content=联想拯救者&pageCurrent=1"	
+		})
+		$("#indexPad").click(function(){
+			location.href=getDict.jumpconfig+"/goods.html?content=苹果iPad 2019&pageCurrent=1"	
+		})
+		$("#indexEarphone").click(function(){
+			location.href=getDict.jumpconfig+"/goods.html?content=苹果 AirPods Pro&pageCurrent=1"	
+		})
+		
+		
+		
+		}) 
+		})
+
+
+</script>
+

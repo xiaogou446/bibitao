@@ -1,0 +1,416 @@
+ #js1{
+    margin-top:-3600px !important;
+    text-align: left;
+}
+#js2{
+    margin-top:-3600px !important;
+    text-align: left;
+} 
+html{/*整个html文件居中显示，不显示横排滚动条*/
+    margin:0 auto;
+}
+*{/*整个body居中显示*/
+    margin:0 auto;
+    /* text-align:center; */
+}
+.wrapper{
+	text-align:center;
+}
+
+
+body{
+	overflow-x: hidden;
+}
+/*顶部总体样式*/
+#header{
+	width: 1920px;
+	position: fixed;
+	left: 50%;
+	margin-left: -960px;
+	font-size: 16px;
+}
+/*搜索框样式*/
+.search_box{
+	height: 32px;
+	margin-top: 3px;
+	margin-left: -55px;
+}
+/*修改placeholder原有的样式*/
+input::-webkit-input-placeholder {
+    /* placeholder位置  */
+    text-align: left;
+}
+/*顶部标签样式*/
+#header span{
+	margin-right: 15px;
+	color: darkgrey;
+	width: 10px;
+	height: 10px;
+	font-size: 18px;
+}
+#header .index_all{
+	margin-left: -18px;
+}
+#header .person_all{
+	margin-left: -13px;
+}
+#header .tuijian_all{
+	position: relative;
+	left: -20px;
+}
+ .content{/* 主体内容背景及大小 */
+    width:100%;
+    height:3200px !important;
+    max-width:1920px;
+    background:rgba(241,241,241,1.00);
+} 
+ .aa{	/* 左侧商品部分位置及大小 */
+    width:1000px;
+    height:3200px;
+    padding-top:60px;
+    margin-left:220px;
+} 
+.ba{/*第一个商品框样式控制*/
+    width:1000px;
+    height:260px;
+    background:white;
+    box-shadow:grey 1px 5px 2px 0px;
+    margin-top:40px;
+}
+.bb{/*第一个商品文字部分位置控制*/
+    margin-left:300px;
+    width:700px;
+    padding-top:40px;
+}
+.bb img{/*京东图片大小及位置设置*/
+    width:35px;
+    height:35px;
+    margin-top:-5px;
+    border-radius:17.5px;
+}
+.bba{/*店铺名样式设置*/
+    font-size:30px;
+    font-weight:700;
+	cursor: default;
+}
+.bbb{/*商品名称样式设置*/
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:18px;
+    color:dimgray;
+}
+.bbb a{
+	color:rgba(47,47,47,0.60);
+}
+.bbb a:hover{
+	color: red;
+	text-decoration: none;
+}
+.bbc{/*评论及好评率样式设置*/
+    font-size:18px;
+    font-weight:600;
+	color: rgba(0,0,0,0.60);
+	cursor: default;
+}
+.bbd{/*价格样式设置*/
+    font-size:38px;
+    margin-top:20px;
+    color:red;
+	cursor: default;
+}
+.bbd img{
+	border-radius: 0;
+}
+.bc img{/*商品图片大小位置设置*/
+    width:300px;
+    height:300px;
+    margin-left:-700px;
+    margin-top:-246px;
+    box-shadow: -2px 5px 5px gray;
+}
+.da{/*第二个商品样式位置设置*/
+    width:1000px;
+    height:260px;
+    background:white;
+    box-shadow:grey -1px 5px 2px 0px;
+    margin-top:40px;
+}
+.db{/*第二个商品文字部分样式位置设置*/
+    margin-left:0px;
+    width:700px;
+    padding-top:40px;
+}
+.db img{/*京东图片大小位置设置*/
+    width:35px;
+    height:35px;
+    margin-top:-5px;
+	border-radius: 17.5px;
+}
+.dba{/*第二个商品店铺名称样式设置*/
+    font-size:30px;
+    font-weight:700;
+	cursor: default;
+}
+.dbb{/*第二个商品商品名称设置*/
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:18px;
+    color:dimgray;
+}
+.dbb a{
+	color:rgba(47,47,47,0.60);
+}
+.dbb a:hover{
+	color: red;
+	text-decoration: none;
+}
+.dbc{/*第二个商品评论及好评率样式设置*/
+    font-size:18px;
+    font-weight:600;
+	cursor: default;
+	color: rgba(0,0,0,0.60);
+}
+.dbd{/*第二个商品价格样式设置*/
+    font-size:38px;
+    margin-top:20px;
+    color:red;
+	cursor: default;
+}
+.dbd img{
+	border-radius: 0;
+}
+.dc img{/*第二个商品图片大小位置设置*/
+    width:300px;
+    height:300px;
+    margin-left:700px;
+    margin-top:-246px;
+    box-shadow: -2px 5px 5px gray;
+}
+.ca{/*第一个商品添加至比较图片位置设置*/
+    z-index:200;
+    margin-top:-180px;
+    margin-left:975px;
+}
+.ca img{/*第一个图片大小位置设置*/
+    width:50px;
+    margin-top:10px;
+}
+.ea{/*第二个商品添加至比较图片位置*/
+    z-index:200;
+    margin-top:-180px;
+    margin-left:975px;
+}
+.ea img{/*第二个商品添加至比较图片大小设置*/
+    width:50px;
+    margin-top:10px;
+}
+ .fa{/* 右侧比较部分外框框样式设置 */
+    position:fixed;
+    width:450px;
+    height:800px;
+    margin-top:-3150px;
+    margin-left:1240px;
+    z-index:800;
+    background:white;
+    box-shadow:grey 1px 5px 2px 0px;
+} 
+.fa img{/*添加至比较部分商品图片大小设置*/
+    width:100px;
+    height:100px;
+}
+ .fy{
+    position:relative;
+    width:450px;
+    height:800px;
+    margin-top:-920px;
+    margin-left:1240px;
+    z-index:800px;
+    background:white;
+    box-shadow:grey 1px 5px 2px 0px;
+} 
+#fz{
+	display: none;
+}
+
+ .fx{
+    position:relative;
+    width:450px;
+    height:800px;
+    margin-top:-3079px;		/*  margin-top:-3100px; */
+    margin-left:1240px;
+    z-index:800px;
+    background:white;
+    box-shadow:grey 1px 5px 2px 0px;
+} 
+.fx img{/*添加至比较部分商品图片大小设置*/
+    width:100px;
+    height:100px;
+}
+.fa img{/*添加至比较部分商品图片大小设置*/
+    width:100px;
+    height:100px;
+}
+.fy img{/*添加至比较部分商品图片大小设置*/
+    width:100px;
+    height:100px;
+}
+.fb{/*添加至比较上部文字位置设置*/
+    padding-top:50px;
+	cursor: default;
+}
+.fba{/*添加至比较上部文字位置设置1*/
+    font-size:30px;
+    font-weight:700;
+    color:darkgrey;
+}
+.fbb{/*添加至比较上部文字位置设置2*/
+    font-size:40px;
+    font-weight:700;
+    color:grey;
+    margin-top:-70px;
+}
+.fbc{/*添加至比较上部文字位置设置3*/
+    margin-top:-50px;
+    margin-left:300px;
+    color:red;
+    font-size:18px;
+}
+.ga{/*第一个比较框样式设置*/
+    margin-top:40px;
+    background:white;
+    width:400px;
+    height:100px;
+}
+.ha{/*第一个比较文字部分样式及位置设置*/
+    margin-left:100px;
+    width:300px;
+}
+.ia{/*第一个比较文字部分样式及位置设置1*/
+    padding-top:4px;
+	cursor: default;
+}
+.iaa{/*第一个比较文字部分文字样式设置*/
+    font-size:20px;
+	margin-left: -10px;
+}
+.iab{/*第一个比较文字部分文字样式设置1*/
+    font-size:20px;
+	margin-left: -25px;
+    color:red;
+}
+.iac button{/*第一个比较文字部分文字位置及样式设置*/
+    width:140px;
+    height:32px;
+    border-top-left-radius:20px;
+    border-bottom-right-radius:20px;
+    font-size:18px;
+    font-weight:700;
+	line-height: 32px;
+	margin-left: 70px;
+}
+.iac span{
+	color: black;
+	margin-top: -20px;
+}
+.hb{/*第一个比较文字部分商品图片位置大小设置*/
+    position: relative;
+	top:-90px;
+/*	margin-left:20px;*/
+/*    margin-top:-92px;*/
+    width:100px;
+}
+.hb img{
+	position: relative;
+	left: -60px;
+}
+.ja{/*下部点击跳转页面样式设置*/
+    width:100%;
+    padding-top:50px;
+    padding-left:250px;
+    margin: 0 auto;
+}
+.jaa{/*下部点击跳转页面按钮样式设置*/
+    color: #333;
+    border: 1px solid #ddd;
+    background-color: #f7f7f7;
+    background-repeat: repeat-x;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 14px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.jab{/*下部点击跳转页面当前页面按钮样式设置*/
+    color:red;
+    background-repeat: repeat-x;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 14px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+.jac{/*下部点击跳转页面未显示页面"..."样式设置*/
+    background-repeat: repeat-x;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 14px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.footer{
+    margin:0 auto;
+    text-align:center;
+}
+#footer{
+	background-color:black;
+	margin: 0 auto;
+    width:100%;
+	max-width: 1920px;
+}
+#footer{
+	font-family: "微软雅黑";
+	height: 400px;
+	cursor: default;
+}
+#footer a:hover{
+	text-decoration: none;
+}
+#footer tr{
+	line-height: 45px;
+}
+#footer th{
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+#footer td{
+	color:darkgray;
+	font-size: 20px;
+	text-align: center;
+}
+#footer table{
+	margin: 0 auto;
+	position: relative;
+	top:20%;
+}
+/*页码样式*/
+.goodsPage{
+	 margin-top: -100px; 
+	position: relative;
+				/* left: 80%; */
+	margin-right:400px;	
+}
+/*去比较按钮*/
+.compare button{
+	position:absolute;
+	margin-left:130px;
+    width: 200px;
+    height:30px;
+    bottom: 15px;
+   
+
+}

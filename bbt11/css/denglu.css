@@ -1,0 +1,145 @@
+.sign-ing span{/*登录注册未报错时字不显示*/
+    color: red;
+    font-size: 0px;/*修改此处未20px 红色字显示*/
+}
+#close1,#close2{/*右侧“x”退出按钮样式设置*/
+    color:black;
+    font-size:30px;
+    margin-right:30px;
+}
+.sign-in{/*登陆注册未显示时所用外部div*/
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1111;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height:2700px;
+    min-height: 800px;
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    float: left;
+    margin-top:-2827px;
+    z-index: 1200;/*此处应为-1200*/
+}
+.sign-ing{/*登陆注册显示时所用外部div*/
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1111;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height:2700px;
+    min-height: 800px;
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    float: left;
+    margin-top:-2850px;
+    z-index: 1200;
+}
+#main-content{
+    float: right;
+    margin-right: 0;
+    background-color: white;
+    height: 100%;
+    width: 20%;
+    min-width: 385px;
+    text-align:left;
+}
+header{
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+section{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+form{
+    margin-top: 10px;
+}
+#bbt-signin-header{
+    font-size: 35px;
+    font-family: \5B8B\4F53;
+    margin-left: 20px;
+    color: black;
+}
+.condition2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.input-row{
+    margin-top: 20px;
+}
+.accounttext{
+    font-size: 20px;
+}
+.account{
+    width: 340px;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.password-row{
+    margin-top: 20px;
+    position: relative;
+}
+.password{
+    width: 340px;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.passwordtext{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.display{
+    position: absolute;
+    right: 50px;
+    top: 6px;
+    font-size: 15px;
+}
+.forgetnumber{
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    bottom: 0;
+    font-size: 15px;
+}
+#submit-btn,#create-btn,#create-btn2{
+    text-align: center;
+    width: 345px;
+    height: 40px;
+    background-color: black;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.tos-pp{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+hr{
+    width: 300px;
+    border-bottom: solid #ccc 1px;
+}
+.button-row{
+    margin-top: 20px;
+}
+.prompt{
+    margin-left: 45px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+.prompt p{
+    margin: 10px;
+    letter-spacing: 1px;
+}
+.close::before{
+    content: "\2716";
+}

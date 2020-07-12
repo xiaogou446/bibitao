@@ -1,0 +1,229 @@
+﻿/* CSS Document */
+/*全局样式*/
+.sign-in{
+	margin-top:-1455px !important;
+}
+.sign-in input{
+	border:1px solid gray;
+}
+.sign-in a{
+	color:#337ab7;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	overflow-x: hidden;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+}
+
+/*顶部总体样式*/
+#header{
+	width: 1920px;
+	position: fixed;
+	left: 50%;
+	margin-left: -960px;
+	font-size: 18px;
+}
+/*顶部标签样式*/
+#header span{
+	margin-right: 15px;
+	color: darkgrey;
+	width: 10px;
+	height: 10px;
+	font-size: 18px;
+}
+#header .index_all{
+	margin-left: -5px;
+}
+#header .person_all{
+	margin-left: -2px;
+}
+/*搜索框样式*/
+.search_box{
+	height: 32px;
+	margin-top: 3px;
+	margin-left: -15px;
+}
+/*标题样式*/
+.header{
+	width: 1920px;
+	margin-top: 52px;
+}
+/*内容区样式*/
+.header .data_content{
+	margin-top: 20px;
+}
+/*“价格曲线”样式*/
+.header h1{
+	color: white;
+	font-weight: 600;
+	position: relative;
+	left: 600%;
+}
+/*主体总体样式*/
+#main{
+	width: 1920px;
+	background-image: url("../img/price_bg.jpg");
+	height: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_header h1:hover{
+	cursor: default;
+}
+.data_content:hover{
+	cursor: default;
+}
+/*手指样式*/
+.collect_car{
+	margin-top: 40px;
+	margin-left: 110%;
+	transform: rotate(330deg);
+}
+.shouzhi2{
+	position: relative;
+	z-index: 100;
+}
+/*右下超链接样式*/
+.main_title a{
+	font-size: 20px;
+}
+.main_title small a{
+	position: relative;
+	top:30px;
+	left: -100px;
+}
+/*加入收藏车按钮样式*/
+.main_title small button{
+	width: 300px;
+	height: 50px;
+	border-radius: 5px;
+	background-color:#337ab7;
+	color:white;
+	margin-top: 30px;
+	margin-left: -100px;
+	font-size: 25px;
+	position: relative;
+	z-index: 0;
+}
+.main_title small span{
+	margin-top: -15px;
+}
+#car{
+	width: 907px;
+	height: 150px;
+	position: relative;
+	left: -990px;
+}
+#car .shouzhi{
+	margin-left: 180%;
+	margin-top: 20%;
+	transform: rotate(320deg);
+}
+#car small{
+	margin-left: -40px;
+}
+#car2{
+	height: 150px;
+	margin-top: -150px;
+}
+#car2 span{
+	margin-top: -10px;
+}
+#car2 button{
+	width: 300px;
+	height: 50px;
+	border-radius: 8px;
+	background-color: #2C58A6;
+	margin-top: 25%;
+	margin-left: -100px;
+}
+#car2 button:hover{
+	background-color:#FFFFFF;
+ 	color: #337ab7;
+}
+#car2 .shouzhi2{
+	transform: rotate(320deg);
+	margin-top: 20%;
+	margin-left: 80%;
+}
+.show_data{
+	width: 150px;
+	height: 100px;
+	background-color: transparent;
+	border: 1px solid #2C58A6;
+    box-shadow: 0px 0px 6px #2C58A6;
+    color: white;
+}
+/*收藏按钮悬浮样式*/
+.main_title small button:hover{
+	background-color:white;
+	color:#337ab7;
+}
+.rt_box{
+	margin-top: -608px;
+}
+.rt_box2{
+	margin-top: 50px;
+}
+/*底部总体样式*/
+#footer{
+	width: 1920px;
+	background-color:black;
+	margin: 0 auto;
+	font-family: "微软雅黑";
+	height: 400px;
+	cursor: default;
+	/*margin-top: 20%;*/
+	/*margin-top: 50%;*/
+}
+#footer tr{
+	line-height: 45px;
+}
+/*“行”样式*/
+#footer th{
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+/*“列”样式*/
+#footer td{
+	color:darkgray;
+	font-size: 20px;
+	text-align: center;
+}
+/*超链接样式*/
+#footer td a{
+	color: darkgray;
+}
+/*超链接鼠标悬浮样式*/
+#footer td a:hover{
+	color: #337ab7;
+}
+/*表格样式*/
+#footer table{
+	width: 1920px;
+	left: 50%;
+	margin-left: -960px;
+	position: relative;
+	top:20%;
+}
+/*置顶样式*/
+#footer .zhiding{
+	width: 50px;
+	height: 50px;
+	border-radius:0 0 50px 0;
+	background-color: black;
+	border: 0;
+	position: fixed;
+	top:865px;
+	left: 97%;
+}

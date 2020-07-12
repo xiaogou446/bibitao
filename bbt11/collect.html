@@ -1,0 +1,607 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>collect</title>
+<!--删除和价格曲线按钮CS-->
+<meta name="description" content="Some ideas for modern button styles and effects">
+<meta name="keywords" content="button, effect, hover, style, inspiration, web design">
+<meta name="author" content="Codrops">
+<link rel="shortcut icon" href="img/icon.png">
+<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+<link rel="stylesheet" type="text/css" href="./css/vicons-font.css">
+<link rel="stylesheet" type="text/css" href="./css/buttons.css">
+<script id="_carbonads_projs" type="text/javascript" src="./css/C6AILKT.json"></script>
+<!--动图js-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+<!--动图cs-->
+<link rel="stylesheet" href="css/style_all.css">
+<!--其他cs-->
+<link rel="stylesheet" href="css/collect.css">
+<!--导航js-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<!--	登录注册js-->
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/autocomplete.js"></script>
+<!--百度js-->
+<script type="text/javascript">
+//var proposals = ['百度1', '百度2', '百度3', '百度4', '百度5', '百度6', '百度7','呵呵呵呵呵呵呵','百度','新浪','a1','a2','a3','a4','b1','b2','b3','b4'];
+
+$(document).ready(function(){
+	$('#search-form').autocomplete({
+		//hints: proposals,
+		width: 120,
+		height: 30,
+		//onSubmit: function(text){
+			//$('#message').html('Selected: <b>' + text + '</b>');			
+		//}
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+<!--导航-->
+	<div id="header" class="navbar-fixed-top center-block">
+		<nav class="navbar navbar-default navbar-inverse">
+<!--		品牌名-->
+			<a class="navbar-brand" href="index.html">bbt</a>
+			<!--			其他标签-->
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<!--				主页-->
+					<ul id="toIndex" class="nav navbar-nav index_all">
+						<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><span>主页</span> <span class="sr-only">(current)</span></a></li>
+					</ul>
+<!--				个人中心-->
+					<ul id="toPersonal" class="nav navbar-nav person_all">
+						<li>
+							<a href="personal.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>个人中心</a>
+						</li>
+					</ul>
+<!--			好物推荐-->
+					<div id="transient" class="navbar-header tuijian_all">
+						<ul id="toTuijian" class="nav navbar-nav">
+							<li>
+								<a class="navbar-brand" href="tuijian.html"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span><span>好物推荐</span></a>
+							</li>
+						</ul>
+					</div>
+<!--				登录注册-->
+				</div>
+			</div>
+		</nav>
+	</div>
+<!--主体-->
+	<div id="main" class="center-block ">
+<!--	动图-->
+		<div id="particles-js"></div>
+<!--	头像及五个按钮-->
+		<div class="main_one center-block">
+<!--		头像-->
+			<img src="img/touxiang.jpg" alt="" class="center-block">
+<!--		五个按钮-->
+			<div class="FiveButton center-block">
+				<ul class="clearfix row">
+					<li class="pull-left col-lg-2" id="toPersonal1"><a href="javascript:void(0);"><button>用户信息</button></a></li>
+					<li class="pull-left col-lg-2" id="toReset"><a href="javascript:void(0);"><button>账户设置</button></a></li>
+					<li class="pull-left col-lg-2" id="toThrough" ><a href="javascript:void(0);"><button>浏览记录</button></a></li>
+					<li class="pull-left col-lg-2"><a href="javascript:void(0);"><button  class="now">收藏记录</button></a></li>
+					<li class="col-lg-2" id="toOut"><a href="javascript:void(0);"><button>退出账号</button></a></li>
+				</ul>
+			</div>
+		</div>
+<!--	浏览1-->
+<!-- 		<div class="main_two main_three">
+		断点
+			<div class="null"></div>
+		右上角
+			<div class="right_top">
+				<span class="day">13</span>
+				<hr>
+				<span class="month">Sep</span>
+				<span class="year">二〇一九</span>
+			</div>
+		主要内容
+			<div class="content">
+			商品图片
+				<div class="image"><img src="img/1.jpg" alt=""></div>
+				商家
+				<h1>衣尚佳<span><img src="img/jingdong.jpg" alt=""></span></h1>
+				商品描述
+				<h2><a href=""><textarea name="detail" id="" cols="71" rows="2">EITIE爱特爱女装2019秋冬新款高端名媛小香风甜美收腰连衣裙D1907305浅灰60 170/42/XL</textarea></a></h2>
+				两个价格
+				<div class="price">
+					<h3>¥148</h3>
+					<h4 class=" pull-left">¥168</h4>
+				</div>
+				假期补充
+				删除和曲线两个按钮
+				<div class="btn box bg-1">
+					<a href="" class="delt"><button class="button button--winona button--border-thin button--round-s" data-text="delete"><span>删除</span></button></a>
+					<a href="price.html" class="price_picture"><button class="button button--winona button--border-thin button--round-s" data-text="curve"><span>价格曲线</span></button></a>
+				</div>
+			</div>
+		</div> -->
+		<!-- <div class="btn box bg-1">
+			<a href="javascript:void(0);" class="delt">
+				<button name="delete1" id="'+responseText[one].goodsId+'" class="button button--winona button--border-thin button--round-s" data-text="delete"><span>删除</span></button>
+			</a>
+			<a href="javascript:void(0);" class="price_picture">
+				<button id="priceLine" class="button button--winona button--border-thin button--round-s" data-text="curve">
+					<span>价格曲线</span>
+				</button>
+			</a>
+		</div> -->
+<!--	浏览2-->
+
+
+	</div>
+<!--底部-->
+	<div id="footer"  class="row">
+<!--	超链接-->
+		<table>
+			<tr>
+				<th class="col-md-2">比价指南</th>
+				<th class="col-md-2">合作伙伴</th>
+				<th class="col-md-2">关于我们</th>
+			</tr>
+			<tr>
+				<td><a href="">常见问题</a></td>
+				<td><a href="">京东</a></td>
+				<td><a href="">©2019比比淘版权所有</a></td>
+			</tr>
+			<tr>
+				<td><a href="">联系客服</a></td>
+				<td><a href="">天猫</a></td>
+				<td><a href="">友情链接</a></td>
+			</tr>
+			<tr>
+				<td><a href="">比价流程</a></td>
+				<td><a href="">淘宝</a></td>
+				<td><a href="">浙ICP备10201940号</a></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a href="">唯品会</a></td>
+				<td><a href="">浙公网安备33030802010083</a></td>
+			</tr>
+		</table>
+<!--		置顶-->
+		<div id="btn" class="zhiding alert alert-danger" role="alert">
+			<a href="#"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+		</div>
+<!--		页码-->
+		<div class="page">
+			<nav aria-label="page navigation">
+			  <ul class="pagination">
+
+			  </ul>
+			</nav>
+		</div>	
+	</div>
+</div>
+<!--动图js-->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+<!--删除和价格曲线按钮js-->
+<script>
+
+			(function() {
+
+				var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+
+				if(isSafari) {
+
+					document.getElementById('support-note').style.display = 'block';
+
+				}
+
+			})();
+
+</script>
+</body>
+</html>
+
+<script>
+function getUrl(){
+	var deffered = new $.Deferred();
+	$.getJSON("res/serverconfig.json",(responseText)=>{
+		$url = responseText.protocol + responseText.domain+ ":" + responseText.port + responseText.context;
+		//执行显示是否拿到数据
+		//console.log($url);
+		
+		deffered.resolve($url);
+	});
+	var result = new $.Deferred();
+ 	deffered.then(function( serverconfig ) {
+		$.getJSON("res/jumpconfig.json",(responseText)=>{
+			$urls = responseText.protocol + responseText.domain;
+			var getDict=[];
+			getDict["serverconfig"]=serverconfig;
+			getDict["jumpconfig"]=$urls;
+			//执行显示是否拿到数据
+			//console.log(getDict);
+			result.resolve(getDict);
+		});		
+		
+	}) 
+	return result;
+}
+
+	$(function(){
+		var def = getUrl();
+		def.then(function(getDict){
+		//关于登录注册 直接加上 就可以  删掉一个js
+		//刷新页面 判定用户是否登录
+		/* token无内容 说明还没有登录 判定用户是否登录 */
+		//console.log(localStorage.length)
+		if(localStorage.length == 0){
+			alert("请先完成登录")
+			location.href=getDict.jumpconfig+"/index.html";
+		}else{
+			var tokens=localStorage.getItem("token");
+			let $data={token:tokens};
+			let data = JSON.stringify($data)
+			$.ajax({
+				type:"post",
+				data:data,
+				url:getDict.serverconfig+"/judgeLoginStatus.action",
+				headers:{"Content-Type":"application/json;charset=UTF-8"},
+				dataType:"json",
+				success:function(responseText){
+					if(responseText.status === "200"){   //"<p>欢迎您,"+responseText.userName+"		<a id='out' href='#'>注销</a></p>"
+						$("#transient").after('<!--				登录注册--><ul class="nav navbar-nav navbar-right wsh "><li class="dropdown"><a href=" " class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>欢迎您:'+responseText.userName+'<span class="caret"></span></a><ul class="dropdown-menu"><li><a id="out" href="#">注销</a></li><!-- <li>< a href="#">注销</ a></li> --></ul></li></ul>')
+					}else{
+						//登录过期
+						alert("登录过期啦！请重新登录")
+						location.href=getDict.jumpconfig+"/index.html"
+					}	
+				},
+				error:function(){
+					//location.href=getDict.jumpconfig+"/404.html"
+				}	
+			});
+		}
+		//注销
+			$("body").on("click","#out,#toOut",function(){
+				localStorage.removeItem("token");
+				location.href=getDict.jumpconfig+"/index.html"
+			});
+		
+			//通过用户登录信息的token来获取用户的收藏信息
+/*    			console.log(localStorage);
+				var tokens=localStorage.getItem("token");
+				let $data={
+							token: tokens
+							}
+				let data = JSON.stringify($data)
+				$.ajax({
+					type:"post",
+					data:data,
+					url:"http://bbt.com/BBT/collectDetail.action",
+					ContentType:"application/json;charset=UTF-8",
+					dataType:"json",
+					success:function(responseText){
+						console.log(responseText)
+						for(var one in responseText){
+							
+							var goodsImg1 = responseText[one].searchImg+""
+							var goodsImg = goodsImg1.replace("E:\\","")  */
+							/* .replace("E:\","bbt.com/") */
+ 							//$("#main").append('		<div class="main_two main_three"><!--		断点--><div class="null"></div><!--			断点--><!--		右上角--><div class="right_top"><span class="day">'+responseText[one].collectDay+'</span><hr><span class="month">'+responseText[one].collectMonth+'</span><span class="year">'+responseText[one].collectYear+'</span></div><!--			右上角--><!--		主要内容--><div class="content"><!--			商品图片--><div class="image"><a href=""><img src="'+goodsImg+'" alt=""></a></div><!--				商家--><h1><a href="">'+responseText[one].shop+'</a><span><img src="img/jingdong.jpg" alt=""></span></h1><!--				商品描述--><h2><a href=""><textarea name="detail" id="" cols="71" rows="2">'+responseText[one].goodsTitle+'</textarea></a></h2><!--				删除 曲线 两个按钮--><div class="price"><h3>¥'+responseText[one].goodsPrice+'</h3><h4 class=" pull-left">¥'+responseText[one].collectPrice+'</h4></div><div class="btn"><button id="'+responseText[one].goodsId+'" class="delete1">删除</button><a href=""><button>价格曲线</button></a></div><!--				删除 曲线两个按钮--></div><!--			主要内容--></div>')
+/* 							$("#main").append('		<div class="main_two main_three"><!--		断点--><div class="null"></div><!--			断点--><!--		右上角--><div class="right_top"><span class="day">'+responseText[one].collectDay+'</span><hr><span class="month">'+responseText[one].collectMonth+'</span><span class="year">'+responseText[one].collectYear+'</span></div><!--			右上角--><!--		主要内容--><div class="content"><!--			商品图片--><div class="image"><a href="javascript:void(0);"><img id="jumpUrl" src="'+goodsImg+'" alt=""></a></div><!--				商家--><h1><a class="shop" href="javascript:void(0);">'+responseText[one].shop+'</a><span><img src="img/jingdong.jpg" alt=""></span></h1><!--				商品描述--><h2><a href="javascript:void(0);"><textarea id="jumpUrl" name="detail"  cols="71" rows="2">'+responseText[one].goodsTitle+'</textarea></a></h2><!--				删除 曲线 两个按钮--><div class="price"><h3 class="price1">¥'+responseText[one].goodsPrice+'</h3><h4 class=" pull-left">¥'+responseText[one].collectPrice+'</h4></div><div class="btn"><button id="'+responseText[one].goodsId+'"  class="delete1">删除</button><a href="javascript:void(0);"><button id="priceLine">价格曲线</button></a></div><!--				删除 曲线两个按钮--></div><!--			主要内容--></div>')
+							}
+					},
+					error:function(){
+						alert("服务器走丢了")
+					}
+				});     */
+				
+				
+				//删除收藏
+				$("body").on("click","[name='delete1']",function(){
+					var tokens=localStorage.getItem("token");
+					var goodsId=$(this).attr("id");				/* find($(".delete1")) */
+					
+		 			let $datas={
+							token: tokens,
+							goodsId: goodsId
+					}
+					let data = JSON.stringify($datas);
+					$.ajax({
+						type:"post",
+						url:getDict.serverconfig+"/deleteCollects.action",
+						headers:{"Content-Type":"application/json;charset=UTF-8"},
+						dataType:"json",
+						data:data,
+						success:function(responseText){
+							if(responseText.status===200){
+								//location.href='http://bbt.com/BBT/'
+								//console.log("删除成功");
+								location.reload();
+								
+							}else{
+								alert("登录失效了呀,请重新登录")
+								location.href=getDict.jumpconfig+"/index.html"
+							}
+							
+							//location.href='http://localhost/search.html?id=123&page=3'
+						},
+						error:function(){
+							//location.href=getDict.jumpconfig+"/404.html"
+						}
+				}) 
+				});
+				
+				
+				//点击价格曲线 商品title 和图片 到商品详情页面
+				$("body").on("click","#priceLine,#jumpUrl",function(){
+					goodsId = $(this).parents('.main_two.main_three').find($('[name="delete1"]')).attr("id");
+					//goodsTitle=$(this).parents('.main_two.main_three').find($("[name='detail']")).html();
+					shop=$(this).parents('.main_two.main_three').find($(".shop")).html()
+					goodsPrice = $(this).parents('.main_two.main_three').find($(".price1")).html();
+					location.href=getDict.jumpconfig+"/price.html?goodsId="+goodsId+"&shop="+shop+"&goodsPrice="+goodsPrice
+				});
+		
+		//设置每页
+		//获取网址上的字段  并处理乱码
+			var url = location.search;
+			var arr_content = url.split('&');
+			var userAccount = arr_content[0].split('=')[1];
+			var currentPage = arr_content[1].split('=')[1];
+			var pageCurrent = arr_content[1].split('=')[1];
+			//向后台传输关键词并返回数据
+			$.ajax({
+			type:"get",
+			//data:data,
+			url:getDict.serverconfig+"/getCollect.action?userAccount="+userAccount+"&pageCurrent="+currentPage,
+			dataType:"json",
+			headers:{"Content-Type":"application/json;charset=UTF-8"},
+			success:function(responseText){
+				//console.log(responseText)
+				if(responseText.length != 0){
+				for(var one in responseText){
+					
+					var goodsImg1 = responseText[one].searchImg+""
+					var goodsImg = goodsImg1.replace("E:\\","") 
+					/* .replace("E:\","bbt.com/") */
+						//$("#main").append('		<div class="main_two main_three"><!--		断点--><div class="null"></div><!--			断点--><!--		右上角--><div class="right_top"><span class="day">'+responseText[one].collectDay+'</span><hr><span class="month">'+responseText[one].collectMonth+'</span><span class="year">'+responseText[one].collectYear+'</span></div><!--			右上角--><!--		主要内容--><div class="content"><!--			商品图片--><div class="image"><a href=""><img src="'+goodsImg+'" alt=""></a></div><!--				商家--><h1><a href="">'+responseText[one].shop+'</a><span><img src="img/jingdong.jpg" alt=""></span></h1><!--				商品描述--><h2><a href=""><textarea name="detail" id="" cols="71" rows="2">'+responseText[one].goodsTitle+'</textarea></a></h2><!--				删除 曲线 两个按钮--><div class="price"><h3>¥'+responseText[one].goodsPrice+'</h3><h4 class=" pull-left">¥'+responseText[one].collectPrice+'</h4></div><div class="btn"><button id="'+responseText[one].goodsId+'" class="delete1">删除</button><a href=""><button>价格曲线</button></a></div><!--				删除 曲线两个按钮--></div><!--			主要内容--></div>')
+					$("#main").append('		<div class="main_two main_three"><!--		断点--><div class="null"></div><!--			断点--><!--		右上角--><div class="right_top"><span class="day">'+responseText[one].collectDay+'</span><hr><span class="month">'+responseText[one].collectMonth+'</span><span class="year">'+responseText[one].collectYear+'</span></div><!--			右上角--><!--		主要内容--><div class="content"><!--			商品图片--><div class="image"><a href="javascript:void(0);"><img id="jumpUrl" src="'+goodsImg+'" alt=""></a></div><!--				商家--><h1><a class="shop" href="javascript:void(0);">'+responseText[one].shop+'</a><span><img src="img/jingdong.jpg" alt=""></span></h1><!--				商品描述--><h2><a href="javascript:void(0);"><textarea id="jumpUrl" name="detail"  cols="71" rows="2">'+responseText[one].goodsTitle+'</textarea></a></h2><!--				删除 曲线 两个按钮--><div class="price"><h3 class="price1">¥'+responseText[one].goodsPrice+'</h3><h4 class=" pull-left">¥'+responseText[one].collectPrice+'</h4></div><div class="btn box bg-1"><a href="javascript:void(0);" class="delt"><button name="delete1" id="'+responseText[one].goodsId+'" class="button button--winona button--border-thin button--round-s" data-text="delete"><span>删除</span></button></a><a href="javascript:void(0);" class="price_picture"><button id="priceLine" class="button button--winona button--border-thin button--round-s" data-text="curve"><span>价格曲线</span></button></a></div><!--				删除 曲线两个按钮--></div><!--			主要内容--></div>')
+					}
+				}else{
+					$("#main").append('<img style="margin-left:710px;margin-top:50px;margin-bottom:100px; auto;width:500px;height:500px;"  src="img/notCollect.png" alt="">')
+				}
+			},
+			error:function(){
+				//location.href=getDict.jumpconfig+"/404.html"
+			}
+		}) 
+		
+		 	//获取该商品总页数
+		let $data={userAccount: userAccount};
+		let data = JSON.stringify($data)
+		$.ajax({
+			type:"post",
+			data:data,
+			url:getDict.serverconfig+"/getTotalCollectPage.action",
+			headers:{"Content-Type":"application/json;charset=UTF-8"},
+			dataType:"json",
+			success:function(responseText){
+				if(responseText.totalPage >parseInt(pageCurrent) + parseInt("5")){
+					//console.log(responseText)
+					if(pageCurrent ==1){
+						$(".pagination").append('<li><a style="color:black;" href="javascript:void(0);">上一页</a></li>')
+						$(".pagination").append('<li><a style="color:black;" href="javascript:void(0);">1</a></li>')
+						for(var i =2;i<6;i++){    //<a href="#" class="1do" >'+i+'</a>
+							$(".pagination").append('<li class="1do"><a href="javascript:void(0);">'+i+'</a></li>')
+						}
+						$(".pagination").append('<li><a href="javascript:void(0);">...</a></li>')
+						$(".pagination").append('<li class="1do"><a href="javascript:void(0);">'+responseText.totalPage+'</a></li>')
+						$(".pagination").append('<li id="nextPage"><a href="javascript:void(0);">下一页</a></li>')  //<a href="#" id="nextPage" >下一页</a>
+					}else{
+						$(".pagination").append('<li id="toPage"><a href="javascript:void(0);">回到首页</a></li>') //<a href="#" id="toPage" >回到首页</a>
+						$(".pagination").append('<li id="lastPage"><a href="javascript:void(0);">上一页</a></li>')		//<a href="#" id="lastPage" >上一页</a>
+						$(".pagination").append('<li class="1do"><a href="javascript:void(0);">'+(parseInt(pageCurrent)-parseInt("1"))+'</a></li>')
+						$(".pagination").append('<li><a style="color:black;" href="javascript:void(0);">'+pageCurrent+'</a></li>')
+						for(var i=(parseInt(pageCurrent)+parseInt("1"));i<(parseInt(pageCurrent)+parseInt("4"));i++){
+							$(".pagination").append('<li class="1do"><a href="javascript:void(0);">'+i+'</a></li>')
+						}
+						$(".pagination").append('<li><a href="javascript:void(0);">...</a></li>')
+						$(".pagination").append('<li class="1do"><a href="javascript:void(0);">'+responseText.totalPage+'</a></li>') 
+						$(".pagination").append('<li id="nextPage"><a href="javascript:void(0);">下一页</a></li>')
+					}
+				}else if(responseText.totalPage ==pageCurrent ){
+					if(pageCurrent == 1){
+						$(".pagination").append('<li><a style="color:black;" href="javascript:void(0);">1</a></li>')
+					}else if((parseInt(pageCurrent)-parseInt("7"))>1){
+						$(".pagination").append('<li id="lastPage"><a href="javascript:void(0);">上一页</a></li>')
+						$(".pagination").append('<li class="1do"><a href="javascript:void(0);">1</a></li>')
+						$(".pagination").append('<li><a href="javascript:void(0);">...</a></li>')
+						$(".pagination").append('<li class="1do"><a href="javascript:void(0);">'+(parseInt(pageCurrent)-parseInt("1"))+'</a></li>')
+						$(".pagination").append('<li><a style="color:black;" href="javascript:void(0);">'+pageCurrent+'</a></li>')
+						for(var i=(parseInt(pageCurrent)+parseInt("1"));i<=responseText.totalPage;i++){
+							$(".pagination").append('<li class="1do"><a href="javascript:void(0);">'+i+'</a></li>')
+						}
+						$(".pagination").append('<li><a style="color:black;" href="javascript:void(0);">下一页</a></li>')
+					}else{
+						$(".pagination").append('<li id="lastPage"><a href="javascript:void(0);">上一页</a></li>')
+						for(var i=1;i<pageCurrent;i++){
+							$(".pagination").append('<li class="1do"><a href="javascript:void(0);">'+i+'</a></li>')
+						}
+						$(".pagination").append('<li><a style="color:black;" href="javascript:void(0);">'+pageCurrent+'</a></li>')
+						$(".pagination").append('<li><a style="color:black;" href="javascript:void(0);">下一页</a></li>')
+					}
+				}else if(responseText.totalPage ==0){
+					$(".pagination").append('<li><a style="color:black;" href="javascript:void(0);">'+pageCurrent+'</a></li>')
+				}
+				else{
+					if((parseInt(pageCurrent)-parseInt("7"))>1){
+						$(".pagination").append('<li id="lastPage"><a href="javascript:void(0);">上一页</a></li>')
+						$(".pagination").append('<li class="1do"><a href="javascript:void(0);">1</a></li>')
+						$(".pagination").append('<li><a href="javascript:void(0);">...</a></li>')
+						$(".pagination").append('<li class="1do"><a href="javascript:void(0);">'+(parseInt(pageCurrent)-parseInt("1"))+'</a></li>')
+						$(".pagination").append('<li><a style="color:black;" href="javascript:void(0);">'+pageCurrent+'</a></li>')
+						for(var i=(parseInt(pageCurrent)+parseInt("1"));i<=responseText.totalPage;i++){
+							$(".pagination").append('<li class="1do"><a href="javascript:void(0);">'+i+'</a></li>')
+						}
+						$(".pagination").append('<li id="nextPage"><a href="javascript:void(0);">下一页</a></li>')
+					}
+					else if(pageCurrent ==1){
+						$(".pagination").append('<li><a style="color:black;" href="javascript:void(0);">上一页</a></li>')
+						$(".pagination").append('<li><a style="color:black;" href="javascript:void(0);">1</a></li>')
+						for(var i=2;i<=responseText.totalPage;i++){
+							$(".pagination").append('<li class="1do"><a href="javascript:void(0);">'+i+'</a></li>')
+						}
+						$(".pagination").append('<li id="nextPage"><a href="javascript:void(0);">下一页</a></li>')
+					}
+					else{
+						$(".pagination").append('<li id="lastPage"><a href="javascript:void(0);">上一页</a></li>')
+						for(var i=1;i<pageCurrent;i++){
+							$(".pagination").append('<li class="1do"><a href="javascript:void(0);">'+i+'</a></li>')
+						}
+						$(".pagination").append('<li><a style="color:black;" href="javascript:void(0);">'+pageCurrent+'</a></li>')
+						for(var i=(parseInt(pageCurrent)+parseInt("1"));i<=responseText.totalPage;i++){
+							$(".pagination").append('<li class="1do"><a href="javascript:void(0);">'+i+'</a></li>')
+						}
+						$(".pagination").append('<li id="nextPage"><a href="javascript:void(0);">下一页</a></li>')
+					}
+				}
+				
+			},
+			error:function(){
+				//location.href=getDict.jumpconfig+"/404.html"
+			}	
+		});
+		//上一页 下一页 回到首页 判定
+ 		$("body").on("click","#lastPage",function(){
+			var page = parseInt(pageCurrent)-parseInt("1")
+			location.href=getDict.jumpconfig+"/collect.html?userAccount="+userAccount+"&pageCurrnet="+page;
+		}); 
+		
+ 		$("body").on("click","#nextPage",function(){
+			var page = parseInt(pageCurrent)+parseInt("1")
+			location.href=getDict.jumpconfig+"/collect.html?userAccount="+userAccount+"&pageCurrnet="+page;
+		}); 
+ 		$("body").on("click","#toPage",function(){
+			var page = parseInt("1")
+			location.href=getDict.jumpconfig+"/collect.html?userAccount="+userAccount+"&pageCurrnet="+page;
+		}); 
+ 		
+	
+	//页码判定跳转
+ 		$("body").on("click",".1do",function(){
+				var page = $(this).find('a').html()
+				location.href=getDict.jumpconfig+"/collect.html?userAccount="+userAccount+"&pageCurrnet="+page;
+			}); 
+		//点击浏览记录 进入浏览记录
+		$("#toThrough").click(function(){
+			//console.log(localStorage);
+			var tokens=localStorage.getItem("token");
+			let $data={
+						token: tokens
+						}
+			let data = JSON.stringify($data)
+			$.ajax({
+				type:"post",
+				data:data,
+				url:getDict.serverconfig+"/getAccount.action",
+				headers:{"Content-Type":"application/json;charset=UTF-8"},
+				dataType:"json",
+				success:function(responseText){
+					//console.log(responseText)
+					var userAccount = responseText.userAccount;
+					if(userAccount !== null){
+						location.href=getDict.jumpconfig+"/through.html?userAccount="+userAccount+"&currentPage=1";
+					}else{
+						alert("账号过期了 请重新登录");
+						location.href=getDict.jumpconfig+"/index.html";
+					}
+				},
+				error:function(){
+					//location.href=getDict.jumpconfig+"/404.html"
+				}
+			}); 
+			
+		});
+		
+		
+		//标题栏跳往主页
+		$("#toIndex").click(function(){
+			
+			location.href=getDict.jumpconfig+"/index.html";
+		})
+		//标题栏跳往个人中心
+		$("#toPersonal").click(function(){
+			location.href=getDict.jumpconfig+"/personal.html";
+		})
+		//标题栏跳往商品推荐
+		$("#toTuijian").click(function(){
+			location.href=getDict.jumpconfig+"/tuijian.html";
+		})
+/* 		//副标题栏跳转浏览记录
+		$("#toThrough").click(function(){
+			location.href=getDict.jumpconfig+"/through.html";
+		}) */
+		
+		//副标题跳转个人主页
+		$("#toPersonal1").click(function(){
+			location.href=getDict.jumpconfig+"/personal.html";
+		})
+								//副标题跳转个人主页
+		$("#toReset").click(function(){
+			location.href=getDict.jumpconfig+"/reset.html";
+		})
+		//副标题跳转浏览
+		$("#toThrough").click(function(){
+			location.href=getDict.jumpconfig+"/through.html";
+		})
+		
+		//点击回到顶部
+		 $("#btn").hide();
+	    //当滚动条的位置处于距顶部50像素以下时，跳转链接出现，否则消失
+	      $(window).scroll(function() {
+	        if ($(window).scrollTop() > 50) {
+	          $("#btn").fadeIn(200);
+	        } else {
+	          $("#btn").fadeOut(200);
+	        }
+	      });
+	      //当点击跳转链接后，回到页面顶部位置
+	      $("#btn").click(function() {
+	        $('body,html').animate({
+	          scrollTop: 0
+	        },
+	        500);
+	        return false;
+	      });
+		
+		})
+	})
+
+
+</script>
+

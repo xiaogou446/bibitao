@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="res/jquery-3.4.1.js" type="text/javascript"></script>
+</head>
+<body>
+	账号:<input type="text" id="account" name = "account" value="" placeholder=" qingshuru " autocomplete = "off"/></br>
+	密码:<input type="password" id= "password" name = "password" value="" placeholder=" qingshurumima " autocomplete = "off"/></br>
+	<button id="loginbtn"> 请登录</button>
+</body>
+</html>
+<script>
+	$(function(){
+		let $url = "";
+		//获取url的路径
+		//获取json文件中的数据				回调函数 当执行完后获取数据后
+		$.getJSON("res/serverconfig.json",(responseText)=>{
+			$url = responseText.protocol + responseText.domain+ ":" + responseText.port + responseText.context;
+			//执行显示是否拿到数据
+			window.console.log($url);
+		});
+		//判定账号密码是否为空
+		if($("#account").val().length !=="" && $("#password").val().length !== ""){
+			$("#loginbtn").click(()=>{
+				//先令判定框为空
+				$("#judge_loginbtn").html("");
+				let $data = {
+						account: $.trim($("#account").val()),  //trim 去除两端空白符号
+						password: $.trim($("#password").val())
+						};
+				//把对象变成字符串 以对应ContentType的json字符串传过去 $url + "/login.action"
+				let person = JSON.stringify($data);
+				window.console.log(person);
+				$.ajax({
+					type:"post",
+					url:$url+"/login.action",
+					data:person,
+					headers:{"Content-Type":"application/json;charset=utf-8"},
+					dataType:"json",
+					async:false,
+					//contentType:  这里显示的是表单type传值  一般用json 字符串传值 这样就需要修改contentType
+					success: function(responseText){
+						window.console.log(responseText);
+						//当账号和密码一致时
+						if(responseText.status ==="200"){
+							console.log("成功登陆");
+							console.log(responseText);
+						}else{
+							$("#loginbtn").after("<span id='judge_loginbtn' style='color:green'>账号或者密码错误</span>")
+						}	
+					},
+					error:function(){
+						alert("服务器走丢了");
+					}
+				});
+				
+			});
+		}else{
+			$("#loginbtn").after("<span id='judge_loginbtn' style='color:red'>用户名或者密码不允许为空</span>")
+		}
+		
+		
+		
+		
+	});
+</script>

@@ -1,0 +1,182 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding:0 ;
+}
+body{
+	background-color: white;
+	overflow-x: hidden;
+}
+/*顶部总体样式*/
+#header{
+	width: 1920px;
+	position: fixed;
+	left: 50%;
+	margin-left: -960px;
+	font-size: 18px;
+	z-index: 200;
+}
+/*搜索框样式*/
+.search_box{
+	width: 180px;
+	height: 32px;
+	margin-left: -50px;
+	position: relative;
+	top:3px;
+}
+/*顶部标签样式*/
+#header span{
+	margin-right: 15px;
+	color: darkgrey;
+	width: 10px;
+	height: 10px;
+	font-size: 18px;
+}
+#header .index_all{
+	margin-left: -18px;
+}
+#header .person_all{
+	margin-left: -16px;
+}
+#header .person_span{
+	margin-left: -5px;
+}
+#header .tuijian_all{
+	position: relative;
+	left: -15px;
+}
+#main{
+	width: 1920px;
+	position: relative;
+	left: 50%;
+	margin-left: -960px;
+	cursor: default;
+}
+#main .excel{
+	width: 1920px;
+	margin-left: -960px;
+	left: 50%;
+	position: relative;
+}
+#main .excel button{
+	width: 320px;
+	height: 50px;
+	margin-left: 42%;
+	margin-top: -30px;
+/*	margin-top: 80px;*/
+}
+#main .tb{
+	margin-top: 60px;
+}
+#main small{
+	font-size: 18px;
+	color: black;
+	position: relative;
+	top:70px;
+	font-weight: 600;
+	left: 20px;
+}
+#main span{
+	margin-top: -5px;
+}
+#main table{
+	padding: 0;
+	font-size: 18px;
+}
+#main table img{
+	width: 200px;
+	height: 200px;
+}
+#main table td,th{
+	text-align: center;
+	width: 200px;
+}
+#main table th{
+	background-color:rgba(250,250,250,0.70);
+}
+#main .center{
+	text-align: center;
+}
+#main .odd{
+	background-color:rgba(255,255,255,1.00);
+}
+#main .seve{
+	background-color:rgba(250,250,250,0.70);
+}
+/*单元格内有斜线*/
+th[class=first]:before{
+content: "";
+position: absolute;
+width: 1px;
+height:300px;/*这里需要自己调整，根据td的宽度和高度*/
+top:30px;
+left:0;
+background-color:rgba(215,214,214,1.00);
+display: block;
+transform: rotate(-82.5deg);/*这里需要自己调整，根据线的位置*/
+transform-origin: top;
+}
+#main table .title{
+	font-weight: 600;
+	vertical-align: middle;
+}
+/*底部总体样式*/
+#footer{
+	width: 1920px;
+	background-color:black;
+/*	margin: 0 auto;*/
+	font-family: "微软雅黑";
+	height: 400px;
+	cursor: default;
+	position: absolute;
+	top:880px;
+	left: 50%;
+	margin-left: -960px;
+}
+/*表格每一块总体样式*/
+#footer tr{
+	line-height: 45px;
+}
+/*“行”样式*/
+#footer th{
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+/*“列”样式*/
+#footer td{
+	color:darkgray;
+	font-size: 20px;
+	text-align: center;
+}
+/*“列”超链接样式*/
+#footer td a{
+	color: darkgray;
+}
+/*“列”超链接 鼠标悬停样式*/
+#footer td a:hover{
+	text-decoration: none;
+	color: #337ab7;
+}
+/*表格总体样式*/
+#footer table{
+	width: 1920px;
+	left: 50%;
+	margin-left: -960px;
+	position: relative;
+	top:20%;
+	background-color: black;
+}
+/*置顶样式*/
+#footer .zhiding{
+	width: 50px;
+	height: 50px;
+	border-radius:0 0 50px 0;
+	background-color: black;
+	border: 0;
+	position: fixed;
+	top:865px;
+	left: 97%;
+}
+

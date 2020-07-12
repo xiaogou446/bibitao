@@ -1,0 +1,531 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=dautocompleteevice-width, initial-scale=1">
+<title>personal</title>
+<!--网页图标-->
+<link rel="shortcut icon" href="img/icon.png">
+	<!--动图cs-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!--动图cs-->
+<link rel="stylesheet" href="css/style_all.css">
+	<!--搜索框cs-->
+<link rel="stylesheet" href="css/autocomplete2.css">
+	<!--其他cs-->
+<link rel="stylesheet" href="css/personal.css">
+	 <!--导航js-->
+	<!-- 	点击显示js-->
+<script type="text/javascript" src="js/jquery.js"></script>
+	<!--	登录注册js-->
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/autocomplete.js"></script>
+<!--百度js-->
+<script type="text/javascript">
+		//var proposals = ['百度1', '百度2', '百度3', '百度4', '百度5', '百度6', '百度7','呵呵呵呵呵呵呵','百度','新浪','a1','a2','a3','a4','b1','b2','b3','b4'];
+
+	$(document).ready(function(){
+	$('#search-form').autocomplete({
+		//hints: proposals,
+		width: 180,
+		height: 30,
+		//onSubmit: function(text){
+		//	$('#message').html('Selected: <b>' + text + '</b>');			
+		//}
+	});
+});
+</script>
+</head>
+
+<body>
+<!--所有内容的大包-->
+<div id="wrapper">
+<!--	顶部导航-->
+	<div id="header" class="navbar-fixed-top center-block">
+		<nav class="navbar navbar-default navbar-inverse">
+<!--		品牌名-->
+			<a class="navbar-brand" href="index.html"><span>bbt</span></a>
+<!--			其他标签-->
+			<div class="container-fluid">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<!--				主页-->
+					<ul id="toIndex" class="nav navbar-nav index_all">
+						<li><a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span><span>主页</span><span class="sr-only">(current)</span></a></li>
+					</ul>
+<!--				个人中心-->
+					<ul class="nav navbar-nav person_all">
+					<li class="active"><a href="personal.html" class="icon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><span>个人中心</span><span class="sr-only">(current)</span></a></li>
+					</ul>
+<!--			好物推荐-->
+				<div class="navbar-header tuijian_all">
+					<ul id="toTuijian" class="nav navbar-nav">
+						<li><a class="navbar-brand" href="tuijian.html"><span class="glyphicon glyphicon-thumbs-up tuijian_icon" aria-hidden="true"></span><span>好物推荐</span><span class="sr-only">(current)</span></a></li>
+					</ul>
+				</div>
+<!--			搜索-->
+				<form id="transient" class="navbar-form navbar-left col-lg-2">
+<!--				搜索框-->
+					<div class="form-group search_box"  id="search-form">
+					</div>
+<!--					搜索框-->
+				</form>
+<!--				登录注册-->
+
+				</div>
+			</div>
+		</nav>
+	</div>
+<!--	主体部分-->
+	<div id="main" class="center-block ">
+<!--	动图-->
+		<div id="particles-js"></div>
+<!--	头像及五个按钮-->
+		<div class="main_one center-block">
+<!--		头像-->
+			<img src="img/touxiang.jpg" alt="" class="center-block">
+<!--		五个按钮-->
+			<div class="FiveButton center-block">
+				<ul class="clearfix row">
+					<li class="pull-left col-lg-2"><a href="javascript:void(0);"><button class="now">用户信息</button></a></li>
+					<li class="pull-left col-lg-2" id="toReset"><a href="javascript:void(0);"><button>账户设置</button></a></li>
+					<li class="pull-left col-lg-2" id="toThrough"><a href="javascript:void(0);"><button>浏览记录</button></a></li>
+					<li class="pull-left col-lg-2" ><a href="javascript:void(0);"><button id="toCollect">收藏记录</button></a></li>
+					<li class="col-lg-2" id="toOut"><a href="javascript:void(0);"><button>退出账号</button></a></li>
+				</ul>
+			</div>
+		</div>
+<!--	个人信息-->
+		<div class="main_two">
+<!--		断点-->
+			<div class="null"></div>
+<!--		右上角-->
+			<div class="right_top">
+				<span>个<br>人<br>信<br>息</span>
+			</div>
+<!--		主要内容-->
+			<div class="content">
+			<h2></h2>
+				<h2 id="userAccount"><!-- 用户名：123456555555 --> <span>*用于登录，请牢记~</span></h2>
+				<h2 id="userName"><!-- 昵称：温柔着倔强 --></h2>
+				<h2 id="gender"><!-- 性别：保密 --></h2>
+				<h2 id="marital"><!-- 婚姻状况：保密 --></h2>
+				<h2 id="level"><!-- 等级：LV2 --></h2>
+<!--
+				<h2></h2>
+				<h2 id="userAccount"></h2>
+				<h2 id="userAccount1"> &nbsp;<button>修改</button></h2>
+				<h2 id="userName"><button>修改</button></h2>
+				<h2>性别：
+					<form action="/example/html/form_action.asp" method="get" class="sex">
+  						<input type="radio" name="sex" value="man">男
+ 						<input type="radio" name="sex" value="woman">女
+ 						<input type="radio" name="sex" value="secret">保密
+					</form>
+				</h2>
+				<h2>等级：LV2</h2>
+-->
+			</div>
+		</div>
+<!--	账号安全-->
+		<div class="main_two main_three">
+<!--		断点-->
+			<div class="null"></div>
+<!--		右上角-->
+			<div class="right_top">
+				<span>账<br>号<br>安<br>全</span>
+			</div>
+<!--		主要内容-->
+			<div class="content">
+				<h2></h2>
+				<h2 id="phone"><!-- 手机号：182*****238 --></h2>
+				<h2>密码：定期修改密码有助于账号的安全</h2>
+				<h2></h2>
+				<h2 class="email">邮箱：已绑定</h2>
+			</div>
+		</div>
+<!--	账号绑定-->
+		<div class="main_two main_three main_four">
+		<!--		断点-->
+			<div class="null"></div>
+		<!--		右上角-->
+			<div class="right_top">
+				<span>账<br>号<br>绑<br>定</span>
+			</div>
+		<!--		主要内容-->
+			<div class="content">
+				<h2></h2>
+				<h2><img src="img/qq.png" alt=""> 122****224</h2>
+				<h2><img src="img/weixin.png" alt=""> tf1******224</h2>
+				<h2 id="Email"><img src="img/youxiang.png" alt=""> <!-- 122*******@qq.com --></h2>
+			</div>
+		</div>
+	</div>
+<!--	底部-->
+	<div id="footer"  class="row">
+<!--	超链接-->
+		<table>
+			<tr>
+				<th class="col-md-2">比价指南</th>
+				<th class="col-md-2">合作伙伴</th>
+				<th class="col-md-2">关于我们</th>
+			</tr>
+			<tr>
+				<td><a href="">常见问题</a></td>
+				<td><a href="">京东</a></td>
+				<td><a href="">©2019比比淘版权所有</a></td>
+			</tr>
+			<tr>
+				<td><a href="">联系客服</a></td>
+				<td><a href="">天猫</a></td>
+				<td><a href="">友情链接</a></td>
+			</tr>
+			<tr>
+				<td><a href="">比价流程</a></td>
+				<td><a href="">淘宝</a></td>
+				<td><a href="">浙ICP备10201940号</a></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a href="">唯品会</a></td>
+				<td><a href="">浙公网安备33030802010083</a></td>
+			</tr>
+		</table>
+<!--		置顶-->
+		<div id="btn" class="zhiding alert alert-danger" role="alert">
+			<a href="#"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></a>
+		</div>
+	</div>
+</div>
+<!--动图js-->
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+</body>
+</html>
+<script>
+
+function getUrl(){
+	var deffered = new $.Deferred();
+	$.getJSON("res/serverconfig.json",(responseText)=>{
+		$url = responseText.protocol + responseText.domain+ ":" + responseText.port + responseText.context;
+		//执行显示是否拿到数据
+		//console.log($url);
+		
+		deffered.resolve($url);
+	});
+	var result = new $.Deferred();
+ 	deffered.then(function( serverconfig ) {
+		$.getJSON("res/jumpconfig.json",(responseText)=>{
+			$urls = responseText.protocol + responseText.domain;
+			var getDict=[];
+			getDict["serverconfig"]=serverconfig;
+			getDict["jumpconfig"]=$urls;
+			//执行显示是否拿到数据
+			//console.log(getDict);
+			result.resolve(getDict);
+		});		
+		
+	}) 
+	return result;
+}
+	$(function(){
+		var def = getUrl();
+		def.then(function(getDict){
+		//关于登录注册 直接加上 就可以  删掉一个js
+		//刷新页面 判定用户是否登录
+		/* token无内容 说明还没有登录 判定用户是否登录 */
+		//console.log(localStorage.length)
+		if(localStorage.length == 0){
+			alert("请先完成登录")
+			location.href=getDict.jumpconfig+"/index.html";
+		}else{
+			var tokens=localStorage.getItem("token");
+			let $data={token:tokens};
+			let data = JSON.stringify($data)
+			$.ajax({
+				type:"post",
+				data:data,
+				url:getDict.serverconfig+"/judgeLoginStatus.action",
+				headers:{"Content-Type":"application/json;charset=UTF-8"},
+				dataType:"json",
+				success:function(responseText){
+					if(responseText.status === "200"){   //"<p>欢迎您,"+responseText.userName+"		<a id='out' href='#'>注销</a></p>"
+						$("#transient").after('<!--				登录注册--><ul class="nav navbar-nav navbar-right wsh "><li class="dropdown"><a href=" " class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>欢迎您:'+responseText.userName+'<span class="caret"></span></a><ul class="dropdown-menu"><li><a id="out" href="#">注销</a></li><!-- <li>< a href="#">注销</ a></li> --></ul></li></ul>')
+					}else{
+						//登录过期
+						alert("登录过期啦！请重新登录")
+						location.href=getDict.jumpconfig+"/index.html";
+					}	
+				},
+				error:function(){
+					location.href=getDict.jumpconfig+"/404.html"
+				}	
+			});
+		}
+		//注销
+			$("body").on("click","#out,#toOut",function(){
+				localStorage.removeItem("token");
+				location.href=getDict.jumpconfig+"/index.html"
+			});
+		
+			//回车键触发点击事件
+			$("input[name='query']").keydown(function(event){
+				if(event.keyCode==13){
+				$(".autocomplete-button").click();
+				}
+				})
+			//取消原form表单的submit功能
+			$("#transient").submit( function () {
+	  			return false;
+			} );
+		//搜索
+			$(".autocomplete-input").keyup(function(){
+				$(".proposal-list").show();
+				if($.trim($(".autocomplete-input").val()) != ""){
+					let $data = {
+							keyword: $.trim($(".autocomplete-input").val())
+						};
+						//window.console.log($data)
+						let digit = JSON.stringify($data)
+						$.ajax({
+							type:"post",
+							url:getDict.serverconfig+"/searchSimilar.action",
+							data:digit,
+							headers:{"Content-Type":"application/json;charset=UTF-8"},
+							dataType:"json",
+							success:function(responseText){
+								/* 列表属性 */
+							
+								$(".proposal-list").text("")
+				 				for(var one in responseText){ //<li class="proposal">a1</li>  <tr><td class= 'content'>"+responseText[one]+"</td></tr>
+									$(".proposal-list").append('<li class="proposal">'+responseText[one]+'</li>')
+								} 
+								
+							},
+							error:function(){
+								location.href=getDict.jumpconfig+"/404.html"
+							}
+						})
+				}else{
+					$(".proposal-list").text("");
+				}
+			});
+			
+			// 近似值优化
+			$(".autocomplete-input").click(function(){
+				$(".proposal-list").show();
+			});
+			$(document).click(function(e){
+				var target = $(e.target);
+				if(target.attr("class")==="autocomplete-input") {return;}
+				else if(target.attr("class")==="proposal"){
+					
+					$(".autocomplete-input").val(target.text());
+					$(".proposal-list").text("");
+					$(".proposal-list").hide();
+					}
+				else{
+					$(".proposal-list").hide();
+					
+				}
+			});
+			//鼠标移入后变色
+	/* 		$(".proposal").mouseover(function(){
+				$(this).css("background-color","red")
+			}) */
+			
+			
+				//点击搜索触发事物 将关键词存入词库
+		$(".autocomplete-button").click(function(){
+			if($.trim($(".autocomplete-input").val()) !== ""){
+				let $datas={
+						content: $.trim($(".autocomplete-input").val())	
+					}
+					//window.console.log($datas)
+					data = JSON.stringify($datas);
+					$.ajax({
+						type:"post",
+						url:getDict.serverconfig+"/search.action",
+						data:data,
+						headers:{"Content-Type":"application/json;charset=UTF-8"},
+						dataType:"json",
+						success:function(){
+							//console.log("成功插入，即将跳转");
+							location.href=getDict.jumpconfig+"/goods.html?content="+$.trim($(".autocomplete-input").val())+"&pageCurrent=1";
+						},
+						error:function(){
+							location.href=getDict.jumpconfig+"/404.html"
+						}
+					})
+			}else{
+				location.href=getDict.jumpconfig+'/index.html'; 
+			}
+			
+			
+		})
+		
+		
+		//通过当前token获取用户信息
+		var tokens=localStorage.getItem("token");
+				let $data={
+							token: tokens
+							}
+				let data = JSON.stringify($data)
+				$.ajax({
+					type:"post",
+					data:data,
+					url:getDict.serverconfig+"/getUser.action",
+					headers:{"Content-Type":"application/json;charset=UTF-8"},
+					dataType:"json",
+					success:function(responseText){
+						//console.log(responseText)
+						if(responseText.Account !== null){
+							$("#userAccount").prepend("用户名："+responseText.userAccount);
+							$("#userName").prepend("昵称："+responseText.userName);
+							$("#gender").append("性别："+responseText.gender);
+							$("#marital").append("婚姻状况："+responseText.marital);
+							$("#level").append("等级：LV"+responseText.level);
+							$("#tel").prepend("手机号："+responseText.tel);
+							var numbers = responseText.Email;
+							number = numbers.split("@")[0];
+							if(number.length>1){
+								var theOne = number.substring(0,1);
+								var theLast = number.substring(number,number.length-1);
+								var num = theOne + "*****"+theLast+"@"+numbers.split("@")[1];
+							}else{
+								var num="*@"+numbers.split("@")[1];
+							}
+							
+							$("#Email").append(num);
+						}else{
+							alert("账号过期了 请重新登录");
+							location.href=getDict.jumpconfig+"/index.html";
+						}
+					},
+					error:function(){
+						location.href=getDict.jumpconfig+"/404.html"
+					}
+				}); 
+				
+			//点击收藏 进入收藏
+			$("#toCollect").click(function(){
+				//console.log(localStorage);
+				var tokens=localStorage.getItem("token");
+				let $data={
+							token: tokens
+							}
+				let data = JSON.stringify($data)
+				$.ajax({
+					type:"post",
+					data:data,
+					url:getDict.serverconfig+"/getAccount.action",
+					headers:{"Content-Type":"application/json;charset=UTF-8"},
+					dataType:"json",
+					success:function(responseText){
+						//console.log(responseText)
+						var userAccount = responseText.userAccount;
+						if(userAccount !== null){
+							location.href=getDict.jumpconfig+"/collect.html?userAccount="+userAccount+"&currentPage=1";
+						}else{
+							alert("账号过期了 请重新登录");
+							location.href=getDict.jumpconfig+"/index.html";
+						}
+					},
+					error:function(){
+						location.href=getDict.jumpconfig+"/404.html"
+					}
+				}); 
+				
+			});
+			
+			//点击浏览记录 进入浏览记录
+			$("#toThrough").click(function(){
+				//console.log(localStorage);
+				var tokens=localStorage.getItem("token");
+				let $data={
+							token: tokens
+							}
+				let data = JSON.stringify($data)
+				$.ajax({
+					type:"post",
+					data:data,
+					url:getDict.serverconfig+"/getAccount.action",
+					headers:{"Content-Type":"application/json;charset=UTF-8"},
+					dataType:"json",
+					success:function(responseText){
+						//console.log(responseText)
+						var userAccount = responseText.userAccount;
+						if(userAccount !== null){
+							location.href=getDict.jumpconfig+"/through.html?userAccount="+userAccount+"&currentPage=1";
+						}else{
+							alert("账号过期了 请重新登录");
+							location.href=getDict.jumpconfig+"/index.html";
+						}
+					},
+					error:function(){
+						location.href=getDict.jumpconfig+"/404.html"
+					}
+				}); 
+				
+			});
+			
+			//标题栏跳往主页
+			$("#toIndex").click(function(){
+				
+				location.href=getDict.jumpconfig+"/index.html";
+			})
+			//标题栏跳往商品推荐
+			$("#toTuijian").click(function(){
+				location.href=getDict.jumpconfig+"/tuijian.html";
+			})
+											//副标题跳转个人主页
+		$("#toReset").click(function(){
+			location.href=getDict.jumpconfig+"/reset.html";
+		})
+			
+			//点击回到顶部
+			 $("#btn").hide();
+		    //当滚动条的位置处于距顶部50像素以下时，跳转链接出现，否则消失
+		      $(window).scroll(function() {
+		        if ($(window).scrollTop() > 50) {
+		          $("#btn").fadeIn(200);
+		        } else {
+		          $("#btn").fadeOut(200);
+		        }
+		      });
+		      //当点击跳转链接后，回到页面顶部位置
+		      $("#btn").click(function() {
+		        $('body,html').animate({
+		          scrollTop: 0
+		        },
+		        500);
+		        return false;
+		      });
+			
+		})
+	})
+	
+
+</script>
+	

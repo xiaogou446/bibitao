@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+/********************************
+A jQuery plugin for search hints
+
+Author: Lorenzo Cioni 
+https://github.com/lorecioni
+********************************/
+
+.autocomplete-container {
+	position: relative;
+	width: 283px;
+	height: 32px;
+	margin: 0 auto;
+/*	border-radius: 3px;*/
+}
+.autocomplete-container input{
+	text-align:left;
+}
+.autocomplete-input {
+	padding: 2px 0 0 9px;
+	border-radius: 3px;
+	font-family: inherit;
+	float: left;
+	font-size: 1em;
+	border: 1px solid rgba(0, 0, 0, 0.19);
+	margin: 0;
+}
+
+.autocomplete-button {
+	font-family: inherit;
+	border: none;
+	background-color:white;
+	color: black;
+	float: left;
+	cursor: pointer;
+	border-radius: 3px 3px 3px 3px;
+	transition: all 0.2s ease-out 0s;
+	margin: 0px 0px 0px 10px;
+}
+
+.autocomplete-button:HOVER {
+	background-color:#E0E0E0;
+}
+
+.proposal-box {
+	position: absolute;
+	height: auto;
+	border-left: 1px solid rgba(0, 0, 0, 0.11);
+	border-right: 1px solid rgba(0, 0, 0, 0.11);
+	left: 0px;
+}
+
+.proposal-list {
+	list-style: none;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.44);
+	width: 180px;
+	position: relative;
+	top:-16px;
+	left: 16px;
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 0px;
+}
+
+.proposal-list li {
+	text-align: left;
+	padding: 5px;
+	font-family: inherit;
+	
+	height: 30px;
+	line-height: 25px;
+	background-color: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+}
+.proposal-list li:hover{
+ background-color: #939393;
+}
+
+li.proposal.selected {
+	background-color:#C5C5C5;
+	color: white;
+}

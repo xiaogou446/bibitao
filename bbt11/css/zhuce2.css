@@ -1,0 +1,103 @@
+#main-content2{
+    float: right;
+    margin-right: 0;
+    background-color: white;
+    height: 100%;
+    width: 20%;
+    min-width: 385px;
+    text-align:left;
+}
+#main-content2 div{
+    text-align:left;
+}
+#main-content2 h1{
+    text-align:left;
+}
+section{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+form{
+    margin-top: 10px;
+}
+#bbt-signin-header2{
+    font-size: 30px;
+    font-family: \5B8B\4F53;
+    margin-left: 20px;
+    color: black;
+}
+.close{
+    color: black;
+    font-size: 30px;
+}
+.close::before{
+    content: "\2716";
+}
+.condition{
+    position: absolute;
+    right: 50px;
+    top: 125px;
+    font-size: 15px;
+}
+.build{
+    font-size: 25px;
+}
+
+.name-row{
+    margin-top: 20px;
+}
+.nametext{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.name{
+    width: 340px;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.mail-row{
+    margin-top: 20px;
+}
+.mailtext{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.mail{
+    width: 340px;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.phone-row{
+    margin-top: 20px;
+}
+.phonetext{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.phone{
+    width: 340px;
+    height: 40px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+.ag-po{
+    width: 340px;
+    padding-top:20px;
+}
+hr{
+    width: 300px;
+}
+.button-row{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.prompt{
+    margin-left: 45px;
+    margin-top: 40px;
+}
+.prompt p{
+    margin: 10px;
+    letter-spacing: 1px;
+}

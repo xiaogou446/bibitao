@@ -1,0 +1,306 @@
+html{/*整个html文件居中显示，不显示横排滚动条*/
+    margin:0 auto;/*页面整体居中*/
+}
+body{/*整个body居中显示*/
+    text-align:center;
+    margin:0 auto;
+	overflow-x: hidden;
+}
+a{/*无文本修饰*/
+    text-decoration:none;
+}
+img{/*图片100%显示*/
+    width:100%;
+    height:100%;
+}
+/*顶部总体样式*/
+#header{
+	width: 1920px;
+	position: fixed;
+	left: 50%;
+	margin-left: -960px;
+	font-size: 18px;
+}
+/*搜索框样式*/
+.search_box{
+	height: 32px;
+	margin-left: -30px;
+	position: relative;
+	top:3px;
+}
+/*解决输入时光标位置问题*/
+input::-webkit-input-placeholder {
+    /* placeholder位置  */
+    text-align: left;
+}
+/*顶部标签样式*/
+#header span{
+	margin-right: 15px;
+	color: darkgrey;
+	width: 10px;
+	height: 10px;
+	font-size: 18px;
+}
+#header .person_all{
+	position: relative;
+	left: 14px;
+}
+#header .person_icon{
+	margin-left: -7px;
+}
+#header .tuijian_span{
+	margin-left: -6px;
+	margin-top: -3px;
+}
+#header .tuijian_all{
+	margin-left: -2px;
+}
+.aa{/*主体部分，背景为白色*/
+   background-color:white;
+   padding-bottom: 50px;
+	margin-top: -195px;
+}
+.ab{/*单数块背景黑色控制*/
+    width:1920px;
+    height:400px;
+    background:black;
+    margin:0px auto 0px auto;
+    position:relative;
+    margin-top:50px;
+	z-index: 0;
+}
+#firab{/*第一个块位置调整*/
+    margin-top:200px;
+}
+.ac{/*图片位置及显示控制*/
+    width:1000px;
+    height:450px;
+    z-index:10;
+    position:relative;
+    margin-left:0;
+}
+.ac img{/*图片圆角*/
+    border-bottom-right-radius:50px;
+}
+.ad{/*主要标题位置控制*/
+    z-index:20;
+    font-size:60px;
+    position:relative;
+    margin-top:-285px;
+    margin-left:160px;
+}
+.ad:hover{
+	cursor: default;
+}
+.adb{/*设置字体为白色*/
+    color:white;
+}
+.ae button{/*进入按钮样式及位置控制*/
+    z-index:20;
+    font-size:25px;
+    position:relative;
+    width:160px;
+    height:50px;
+    background:white;
+    margin-top:-62px;
+    margin-left:1360px;
+    border-top-left-radius:25px;
+    border-bottom-right-radius:25px;
+    padding-top:7px;
+}
+.ae span{
+	color: black;
+	margin-top: -25px;
+}
+.aea,.bea{/*进入两个字设置为黑色*/
+    color:black;
+}
+.af{/*右边白色竖排字样式设置*/
+    z-index:18;
+    font-size:30px;
+    position:relative;
+    color:white;
+	margin-left: 15%;
+}
+.af:hover{
+	cursor: default;
+}
+.afa{/*第一列白色字设置*/
+    width:30px;
+    margin-top:-150px;
+    margin-left:1500px;
+}
+.afb{/*第二列白色字设置*/
+    width:30px;
+    margin-top:-200px;
+    margin-left:1400px;
+}
+.bb{/*双数块样式设置*/
+    width:100%;
+    width:1920px;
+    height:400px;
+    background:black;
+    margin:0 auto 0 auto;
+    position:relative;
+    margin-top:50px;
+}
+.bc{/*图片位置及显示设置*/
+    width:1000px;
+    height:450px;
+    z-index:10;
+    position:relative;
+    margin-right:0;
+    float:right;
+}
+.bc img{/*图片圆角设置*/
+    border-bottom-left-radius:50px;
+}
+.bd{/*主要标题位置设置，设置为右浮动*/
+    z-index:20;
+    font-size:60px;
+    position:relative;
+    margin-top:-285px;
+    margin-right:775px;
+    float:right;
+}
+.bd:hover{
+	cursor: default;
+}
+.bda{/*白色字设置*/
+    color:white;
+}
+.be button{/*进入按钮样式及位置控制*/
+    z-index:20;
+    font-size:25px;
+    position:relative;
+    width:160px;
+    height:50px;
+    background:white;
+    margin-top:-270px;
+    margin-left:400px;
+    border-top-left-radius:25px;
+    border-bottom-right-radius:25px;
+}
+.be span{
+	color: black;
+	margin-top: -18px;
+}
+.bf{/*左侧白色字样式设置*/
+    z-index:20;
+    font-size:30px;
+    position:relative;
+    color:white;
+    float:right;
+	margin-right: 20%;
+}
+.bf:hover{
+	cursor: default;
+}
+.bfa{/*第一列白色字设置*/
+    width:30px;
+    margin-top:-370px;
+    margin-right:1420px;
+}
+.bfb{/*第二列白色字设置*/
+    width:30px;
+    margin-top:-210px;
+    margin-left:40px;
+	padding-left:40px;
+}
+#footer{
+	background-color:black;
+    width:100%;
+	max-width: 1920px;
+    min-width: 1000px;
+	font-family: "微软雅黑";
+	height: 400px;
+	position: relative;
+	top:30px;
+}
+#footer .cur{
+	cursor: default;
+}
+#footer .cur:hover{
+	cursor: default;
+}
+#footer tr{
+	line-height: 45px;
+}
+#footer th{
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+#footer td{
+	color:darkgray;
+	font-size: 20px;
+	text-align: center;
+}
+#footer td a:hover{
+	text-decoration: none;
+}
+#footer table{
+	margin: 0 auto;
+	position: relative;
+	top:20%;
+}
+/*置顶样式*/
+#footer .zhiding{
+	width: 50px;
+	height: 50px;
+	border-radius:0 0 50px 0;
+	background-color: black;
+	border: 0;
+	position: fixed;
+	top:92%;
+	left:97.3%;
+	z-index: 30;
+}
+@media (max-width:1540px){/*设置当页面缩小到1540px时的网页样式改变，主要为块内主要标题位置变化、进入按钮位置变化左右两边白色小字位置变化*/
+    .ad{/*单数块标题位置变化*/
+        margin-left: -940px;
+    }
+    .ae{/*单数块进入按钮位置变化*/
+        margin-left: 440px;
+        margin-top: 10px;
+    }
+    .afa{/*单数块右侧白色小字位置变化1*/
+        margin-left: 1080px;
+        margin-top: -230px;
+    }
+    .afb{/*单数块右侧标题位置变化2*/
+        margin-left: 1040px;
+        margin-top: -210px;
+    }
+    .bd{/*复数块标题位置变化*/
+        margin-right: 320px;
+    }
+    .be{/*复数块进入按钮位置变化*/
+        margin-right: 450px;
+        margin-top: -185px;
+    }
+    .bfa{/*复数块左侧白色小字位置变化*/
+        margin-right: 1080px;
+    }
+}
+@media (max-width:1000px){/*当页面宽度小于1000px时网页样式变化，主要为复数块右浮动变为左浮动*/
+    .bc{/*复数块变为左浮动*/
+        margin: 0 auto;
+        float: left;
+    }
+    .bd{/*复数块标题改为左浮动*/
+        float: left;
+        position:relative;
+        margin: 0 auto;
+        margin-top:-285px;
+        margin-left:320px;
+        width: 367px;
+    }
+    .be{/*复数块按钮变为左浮动*/
+        float: left;
+        position:relative;
+        margin: 0 auto;
+        margin-top: -185px;
+        margin-left:452px;
+    }
+}

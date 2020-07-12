@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局样式*/
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	overflow-x: hidden;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+}
+/*顶部总体样式*/
+#header{
+	width: 1920px;
+	position: fixed;
+	left: 50%;
+	margin-left: -960px;
+	font-size: 18px;
+}
+/*搜索框样式*/
+.search_box{
+	height: 32px;
+	margin-top: 3px;
+	margin-left: -20px;
+}
+/*解决输入时光标位置问题*/
+input::-webkit-input-placeholder {
+    /* placeholder位置  */
+    text-align: left;
+}
+/*顶部标签样式*/
+#header span{
+	margin-right: 15px;
+	color: darkgrey;
+	width: 10px;
+	height: 10px;
+	font-size: 18px;
+}
+#header .person_all{
+	margin-left: -2px;
+}
+/*标题样式*/
+.header{
+	width: 1920px;
+	margin-top: 52px;
+}
+/*内容区样式*/
+.header .data_content{
+	margin-top: 20px;
+}
+/*“价格曲线”样式*/
+.header h1{
+	color: white;
+	font-weight: 600;
+	position: relative;
+	left: 600%;
+}
+/*主体总体样式*/
+#main{
+	width: 1920px;
+	background-image: url("../../../压缩包/我/bbt/img/price_bgimg.jpg");
+}
+/*手指样式*/
+.collect_car{
+	margin-top: 40px;
+	margin-left: 110%;
+	transform: rotate(330deg);
+}
+/*右下超链接样式*/
+.main_title a{
+	font-size: 20px;
+}
+.main_title small a{
+	position: relative;
+	top:30px;
+	left: -100px;
+}
+/*加入收藏车按钮样式*/
+.main_title small button{
+	width: 300px;
+	height: 50px;
+	border-radius: 5px;
+	background-color:#337ab7;
+	color:white;
+	margin-top: -50px;
+	margin-left: -10px;
+	font-size: 25px;
+	position: relative;
+	z-index: 0;
+}
+.main_title small span{
+	margin-top: -15px;
+}
+/*链接样式 去除多行文本边框和底色*/
+textarea{
+ border:none;
+ overflow:hidden;
+ background-color: transparent;
+}
+textarea:hover{
+	cursor: pointer;
+}
+/*底部总体样式*/
+#footer{
+	width: 1920px;
+	background-color:black;
+	margin: 0 auto;
+	font-family: "微软雅黑";
+	height: 400px;
+	margin-top: 40%;
+}
+/*超链接样式*/
+#footer tr{
+	line-height: 45px;
+}
+/*“行”样式*/
+#footer th{
+	font-size: 30px;
+	color: white;
+	text-align: center;
+}
+/*“列”样式*/
+#footer td{
+	color:darkgray;
+	font-size: 20px;
+	text-align: center;
+}
+/*超链接样式*/
+#footer td a{
+	color: darkgray;
+}
+/*超链接鼠标悬浮样式*/
+#footer td a:hover{
+	color: #337ab7;
+}
+/*表格样式*/
+#footer table{
+	width: 1920px;
+	left: 50%;
+	margin-left: -960px;
+	position: relative;
+	top:20%;
+}
+/*置顶样式*/
+#footer .zhiding{
+	width: 50px;
+	height: 50px;
+	border-radius:0 0 50px 0;
+	background-color: black;
+	border: 0;
+	position: fixed;
+	top:865px;
+	left: 97%;
+}
