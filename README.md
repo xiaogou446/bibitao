@@ -8,5 +8,4 @@
 
 sql数据已贴，都是老数据，未维护。
 
-如果您觉得能用不错，感谢您的友情赞助！
-![image](https://github.com/user-attachments/assets/f2587166-bb2f-4a7d-b563-6f3b7388cdc9)
+
